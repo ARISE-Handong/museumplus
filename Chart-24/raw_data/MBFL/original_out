@@ -1,0 +1,10 @@
+org.jfree.chart.renderer.junit.GrayPaintScaleTests#testGetPaint,0,FAILED
+org.jfree.chart.renderer.junit.GrayPaintScaleTests#testSerialization,0,PASS
+org.jfree.chart.renderer.junit.GrayPaintScaleTests#testCloning,0,PASS
+org.jfree.chart.renderer.junit.GrayPaintScaleTests#testEquals,0,PASS
+org.jfree.chart.renderer.junit.GrayPaintScaleTests#testConstructor,0,PASS
+org.jfree.chart.renderer.xy.junit.XYBlockRendererTests#testEquals,0,PASS
+org.jfree.chart.title.junit.PaintScaleLegendTests#testSerialization,0,PASS
+org.jfree.chart.title.junit.PaintScaleLegendTests#testCloning,0,PASS
+org.jfree.chart.title.junit.PaintScaleLegendTests#testHashcode,0,PASS
+org.jfree.chart.title.junit.PaintScaleLegendTests#testEquals,0,PASS

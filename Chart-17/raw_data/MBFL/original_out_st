@@ -1,0 +1,1 @@
+org.jfree.data.time.junit.TimeSeriesTests#testBug1832432,0,java.lang.IllegalArgumentException: Requires start <= end. at org.jfree.data.time.TimeSeries.createCopy(TimeSeries.java:880) at org.jfree.data.time.TimeSeries.clone(TimeSeries.java:857) at org.jfree.data.time.junit.TimeSeriesTests.testBug1832432(TimeSeriesTests.java:619)

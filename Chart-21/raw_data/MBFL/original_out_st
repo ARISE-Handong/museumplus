@@ -1,0 +1,1 @@
+org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests#testGetRangeBounds,0,junit.framework.AssertionFailedError: expected:<Range[8.59.6]> but was:<Range[8.69.6]> at org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests.testGetRangeBounds(DefaultBoxAndWhiskerCategoryDatasetTests.java:292)

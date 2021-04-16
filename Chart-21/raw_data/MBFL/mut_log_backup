@@ -1,0 +1,1208 @@
+1:STD:<ASSIGN>:<NO-OP>:org.jfree.data.general.AbstractDataset@<init>():97:this.group = new DatasetGroup() |==> <NO-OP>
+2:STD:<ASSIGN>:<NO-OP>:org.jfree.data.general.AbstractDataset@<init>():98:this.listenerList = new EventListenerList() |==> <NO-OP>
+3:EVR:<MEMBER_SELECT(org.jfree.data.general.DatasetGroup)>:<DEFAULT>:org.jfree.data.general.AbstractDataset@getGroup():109:this.group |==> null
+4:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.general.AbstractDataset@setGroup(org.jfree.data.general.DatasetGroup):120:group == null |==> group != null
+5:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.general.AbstractDataset@setGroup(org.jfree.data.general.DatasetGroup):120:group == null |==> false
+6:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.general.AbstractDataset@setGroup(org.jfree.data.general.DatasetGroup):120:group == null |==> true
+7:LVR:<CLASS>:<EMPTY>:org.jfree.data.general.AbstractDataset@setGroup(org.jfree.data.general.DatasetGroup):121:"Null \'group\' argument." |==> ""
+8:STD:<ASSIGN>:<NO-OP>:org.jfree.data.general.AbstractDataset@setGroup(org.jfree.data.general.DatasetGroup):123:this.group = group |==> <NO-OP>
+9:STD:<CALL>:<NO-OP>:org.jfree.data.general.AbstractDataset@addChangeListener(org.jfree.data.general.DatasetChangeListener):134:this.listenerList.add(DatasetChangeListener.class, listener) |==> <NO-OP>
+10:STD:<CALL>:<NO-OP>:org.jfree.data.general.AbstractDataset@removeChangeListener(org.jfree.data.general.DatasetChangeListener):146:this.listenerList.remove(DatasetChangeListener.class, listener) |==> <NO-OP>
+11:EVR:<METHOD_INVOCATION(java.util.List)>:<DEFAULT>:org.jfree.data.general.AbstractDataset@hasListener(java.util.EventListener):162:Arrays.asList(this.listenerList.getListenerList()) |==> null
+12:EVR:<METHOD_INVOCATION(boolean)>:<DEFAULT>:org.jfree.data.general.AbstractDataset@hasListener(java.util.EventListener):163:list.contains(listener) |==> false
+13:STD:<CALL>:<NO-OP>:org.jfree.data.general.AbstractDataset@fireDatasetChanged():172:notifyListeners(new DatasetChangeEvent(this, this)) |==> <NO-OP>
+14:EVR:<METHOD_INVOCATION(java.lang.Object[])>:<DEFAULT>:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):186:this.listenerList.getListenerList() |==> null
+15:LVR:POS:0:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:2 |==> 0
+16:LVR:POS:NEG:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:2 |==> -2
+17:AOR:-(int,int):%(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:listeners.length - 2 |==> listeners.length % 2
+18:AOR:-(int,int):*(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:listeners.length - 2 |==> listeners.length * 2
+19:AOR:-(int,int):+(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:listeners.length - 2 |==> listeners.length + 2
+20:AOR:-(int,int):/(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:listeners.length - 2 |==> listeners.length / 2
+21:LVR:0:POS:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:0 |==> 1
+22:LVR:0:NEG:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:0 |==> -1
+23:ROR:>=(int,int):!=(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:i >= 0 |==> i != 0
+24:ROR:>=(int,int):<(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:i >= 0 |==> i < 0
+25:ROR:>=(int,int):<=(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:i >= 0 |==> i <= 0
+26:ROR:>=(int,int):==(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:i >= 0 |==> i == 0
+27:ROR:>=(int,int):>(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:i >= 0 |==> i > 0
+28:ROR:>=(int,int):FALSE(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:i >= 0 |==> false
+29:ROR:>=(int,int):TRUE(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:i >= 0 |==> true
+30:LVR:POS:0:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:2 |==> 0
+31:LVR:POS:NEG:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):187:2 |==> -2
+32:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):188:listeners[i] == DatasetChangeListener.class |==> listeners[i] != DatasetChangeListener.class
+33:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):188:listeners[i] == DatasetChangeListener.class |==> false
+34:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):188:listeners[i] == DatasetChangeListener.class |==> true
+35:LVR:POS:0:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):189:1 |==> 0
+36:LVR:POS:NEG:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):189:1 |==> -1
+37:AOR:+(int,int):%(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):189:i + 1 |==> i % 1
+38:AOR:+(int,int):*(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):189:i + 1 |==> i * 1
+39:AOR:+(int,int):-(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):189:i + 1 |==> i - 1
+40:AOR:+(int,int):/(int,int):org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):189:i + 1 |==> i / 1
+41:STD:<CALL>:<NO-OP>:org.jfree.data.general.AbstractDataset@notifyListeners(org.jfree.data.general.DatasetChangeEvent):189:((DatasetChangeListener)listeners[i + 1]).datasetChanged(event) |==> <NO-OP>
+42:EVR:<TYPE_CAST(org.jfree.data.general.AbstractDataset)>:<DEFAULT>:org.jfree.data.general.AbstractDataset@clone():207:(AbstractDataset)super.clone() |==> null
+43:STD:<ASSIGN>:<NO-OP>:org.jfree.data.general.AbstractDataset@clone():208:clone.listenerList = new EventListenerList() |==> <NO-OP>
+44:EVR:<IDENTIFIER(org.jfree.data.general.AbstractDataset)>:<DEFAULT>:org.jfree.data.general.AbstractDataset@clone():209:clone |==> null
+45:STD:<CALL>:<NO-OP>:org.jfree.data.general.AbstractDataset@writeObject(java.io.ObjectOutputStream):220:stream.defaultWriteObject() |==> <NO-OP>
+46:STD:<CALL>:<NO-OP>:org.jfree.data.general.AbstractDataset@readObject(java.io.ObjectInputStream):233:stream.defaultReadObject() |==> <NO-OP>
+47:STD:<ASSIGN>:<NO-OP>:org.jfree.data.general.AbstractDataset@readObject(java.io.ObjectInputStream):234:this.listenerList = new EventListenerList() |==> <NO-OP>
+48:LVR:POS:0:org.jfree.data.general.AbstractDataset@readObject(java.io.ObjectInputStream):235:10 |==> 0
+49:LVR:POS:NEG:org.jfree.data.general.AbstractDataset@readObject(java.io.ObjectInputStream):235:10 |==> -10
+50:STD:<CALL>:<NO-OP>:org.jfree.data.general.AbstractDataset@readObject(java.io.ObjectInputStream):235:stream.registerValidation(this, 10) |==> <NO-OP>
+51:STD:<CALL>:<NO-OP>:org.jfree.data.general.AbstractDataset@validateObject():257:fireDatasetChanged() |==> <NO-OP>
+52:LVR:<CLASS>:<EMPTY>:org.jfree.data.general.DatasetGroup@<init>():66:"NOID" |==> ""
+53:STD:<ASSIGN>:<NO-OP>:org.jfree.data.general.DatasetGroup@<init>():66:this.id = "NOID" |==> <NO-OP>
+54:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.general.DatasetGroup@<init>(java.lang.String):75:id == null |==> id != null
+55:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.general.DatasetGroup@<init>(java.lang.String):75:id == null |==> false
+56:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.general.DatasetGroup@<init>(java.lang.String):75:id == null |==> true
+57:LVR:<CLASS>:<EMPTY>:org.jfree.data.general.DatasetGroup@<init>(java.lang.String):76:"Null \'id\' argument." |==> ""
+58:STD:<ASSIGN>:<NO-OP>:org.jfree.data.general.DatasetGroup@<init>(java.lang.String):78:this.id = id |==> <NO-OP>
+59:EVR:<MEMBER_SELECT(java.lang.String)>:<DEFAULT>:org.jfree.data.general.DatasetGroup@getID():87:this.id |==> null
+60:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.jfree.data.general.DatasetGroup@clone():98:super.clone() |==> null
+61:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.general.DatasetGroup@equals(java.lang.Object):109:obj == this |==> obj != this
+62:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.general.DatasetGroup@equals(java.lang.Object):109:obj == this |==> false
+63:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.general.DatasetGroup@equals(java.lang.Object):109:obj == this |==> true
+64:LVR:TRUE:FALSE:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):110:true |==> false
+65:STD:<RETURN>:<NO-OP>:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):110:return Config.__M_NO == 0 && Config.COVERED(64, 64) ? true : Config.__M_NO == 64 ? false : true; |==> <NO-OP>
+66:LVR:FALSE:TRUE:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):113:false |==> true
+67:STD:<RETURN>:<NO-OP>:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):113:return Config.__M_NO == 0 && Config.COVERED(66, 66) ? false : Config.__M_NO == 66 ? true : false; |==> <NO-OP>
+68:EVR:<TYPE_CAST(org.jfree.data.general.DatasetGroup)>:<DEFAULT>:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):115:(DatasetGroup)obj |==> null
+69:COR:this.id.equals(that.id):TRUE:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):116:this.id.equals(that.id) |==> false
+70:COR:this.id.equals(that.id):FALSE:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):116:this.id.equals(that.id) |==> true
+71:LVR:FALSE:TRUE:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):117:false |==> true
+72:STD:<RETURN>:<NO-OP>:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):117:return Config.__M_NO == 0 && Config.COVERED(71, 71) ? false : Config.__M_NO == 71 ? true : false; |==> <NO-OP>
+73:LVR:TRUE:FALSE:org.jfree.data.general.DatasetGroup@equals(java.lang.Object):119:true |==> false
+74:STD:<ASSIGN>:<NO-OP>:org.jfree.data.general.DatasetChangeEvent@<init>(java.lang.Object,org.jfree.data.general.Dataset):74:this.dataset = dataset |==> <NO-OP>
+75:EVR:<MEMBER_SELECT(org.jfree.data.general.Dataset)>:<DEFAULT>:org.jfree.data.general.DatasetChangeEvent@getDataset():85:this.dataset |==> null
+76:ROR:>(double,double):!=(double,double):org.jfree.data.Range@<init>(double,double):86:lower > upper |==> lower != upper
+77:ROR:>(double,double):<(double,double):org.jfree.data.Range@<init>(double,double):86:lower > upper |==> lower < upper
+78:ROR:>(double,double):<=(double,double):org.jfree.data.Range@<init>(double,double):86:lower > upper |==> lower <= upper
+79:ROR:>(double,double):==(double,double):org.jfree.data.Range@<init>(double,double):86:lower > upper |==> lower == upper
+80:ROR:>(double,double):>=(double,double):org.jfree.data.Range@<init>(double,double):86:lower > upper |==> lower >= upper
+81:ROR:>(double,double):FALSE(double,double):org.jfree.data.Range@<init>(double,double):86:lower > upper |==> false
+82:ROR:>(double,double):TRUE(double,double):org.jfree.data.Range@<init>(double,double):86:lower > upper |==> true
+83:LVR:<CLASS>:<EMPTY>:org.jfree.data.Range@<init>(double,double):87:"Range(double, double): require lower (" |==> ""
+84:LVR:<CLASS>:<EMPTY>:org.jfree.data.Range@<init>(double,double):88:") <= upper (" |==> ""
+85:LVR:<CLASS>:<EMPTY>:org.jfree.data.Range@<init>(double,double):88:")." |==> ""
+86:STD:<ASSIGN>:<NO-OP>:org.jfree.data.Range@<init>(double,double):91:this.lower = lower |==> <NO-OP>
+87:STD:<ASSIGN>:<NO-OP>:org.jfree.data.Range@<init>(double,double):92:this.upper = upper |==> <NO-OP>
+88:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.jfree.data.Range@getLowerBound():101:this.lower |==> 0.0
+89:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.jfree.data.Range@getUpperBound():110:this.upper |==> 0.0
+90:AOR:-(double,double):%(double,double):org.jfree.data.Range@getLength():119:this.upper - this.lower |==> this.upper % this.lower
+91:AOR:-(double,double):*(double,double):org.jfree.data.Range@getLength():119:this.upper - this.lower |==> this.upper * this.lower
+92:AOR:-(double,double):+(double,double):org.jfree.data.Range@getLength():119:this.upper - this.lower |==> this.upper + this.lower
+93:AOR:-(double,double):/(double,double):org.jfree.data.Range@getLength():119:this.upper - this.lower |==> this.upper / this.lower
+94:LVR:POS:0:org.jfree.data.Range@getCentralValue():128:2.0 |==> 0.0
+95:LVR:POS:NEG:org.jfree.data.Range@getCentralValue():128:2.0 |==> -2.0
+96:AOR:/(double,double):%(double,double):org.jfree.data.Range@getCentralValue():128:this.lower / 2.0 |==> this.lower % 2.0
+97:AOR:/(double,double):*(double,double):org.jfree.data.Range@getCentralValue():128:this.lower / 2.0 |==> this.lower * 2.0
+98:AOR:/(double,double):+(double,double):org.jfree.data.Range@getCentralValue():128:this.lower / 2.0 |==> this.lower + 2.0
+99:AOR:/(double,double):-(double,double):org.jfree.data.Range@getCentralValue():128:this.lower / 2.0 |==> this.lower - 2.0
+100:LVR:POS:0:org.jfree.data.Range@getCentralValue():128:2.0 |==> 0.0
+101:LVR:POS:NEG:org.jfree.data.Range@getCentralValue():128:2.0 |==> -2.0
+102:AOR:/(double,double):%(double,double):org.jfree.data.Range@getCentralValue():128:this.upper / 2.0 |==> this.upper % 2.0
+103:AOR:/(double,double):*(double,double):org.jfree.data.Range@getCentralValue():128:this.upper / 2.0 |==> this.upper * 2.0
+104:AOR:/(double,double):+(double,double):org.jfree.data.Range@getCentralValue():128:this.upper / 2.0 |==> this.upper + 2.0
+105:AOR:/(double,double):-(double,double):org.jfree.data.Range@getCentralValue():128:this.upper / 2.0 |==> this.upper - 2.0
+106:AOR:+(double,double):%(double,double):org.jfree.data.Range@getCentralValue():128:this.lower / 2.0 + this.upper / 2.0 |==> this.lower / 2.0 % (this.upper / 2.0)
+107:AOR:+(double,double):*(double,double):org.jfree.data.Range@getCentralValue():128:this.lower / 2.0 + this.upper / 2.0 |==> this.lower / 2.0 * (this.upper / 2.0)
+108:AOR:+(double,double):-(double,double):org.jfree.data.Range@getCentralValue():128:this.lower / 2.0 + this.upper / 2.0 |==> this.lower / 2.0 - this.upper / 2.0
+109:AOR:+(double,double):/(double,double):org.jfree.data.Range@getCentralValue():128:this.lower / 2.0 + this.upper / 2.0 |==> this.lower / 2.0 / (this.upper / 2.0)
+110:ROR:>=(double,double):!=(double,double):org.jfree.data.Range@contains(double):140:value >= this.lower |==> value != this.lower
+111:ROR:>=(double,double):<(double,double):org.jfree.data.Range@contains(double):140:value >= this.lower |==> value < this.lower
+112:ROR:>=(double,double):<=(double,double):org.jfree.data.Range@contains(double):140:value >= this.lower |==> value <= this.lower
+113:ROR:>=(double,double):==(double,double):org.jfree.data.Range@contains(double):140:value >= this.lower |==> value == this.lower
+114:ROR:>=(double,double):>(double,double):org.jfree.data.Range@contains(double):140:value >= this.lower |==> value > this.lower
+115:ROR:>=(double,double):FALSE(double,double):org.jfree.data.Range@contains(double):140:value >= this.lower |==> false
+116:ROR:>=(double,double):TRUE(double,double):org.jfree.data.Range@contains(double):140:value >= this.lower |==> true
+117:ROR:<=(double,double):!=(double,double):org.jfree.data.Range@contains(double):140:value <= this.upper |==> value != this.upper
+118:ROR:<=(double,double):<(double,double):org.jfree.data.Range@contains(double):140:value <= this.upper |==> value < this.upper
+119:ROR:<=(double,double):==(double,double):org.jfree.data.Range@contains(double):140:value <= this.upper |==> value == this.upper
+120:ROR:<=(double,double):>(double,double):org.jfree.data.Range@contains(double):140:value <= this.upper |==> value > this.upper
+121:ROR:<=(double,double):>=(double,double):org.jfree.data.Range@contains(double):140:value <= this.upper |==> value >= this.upper
+122:ROR:<=(double,double):FALSE(double,double):org.jfree.data.Range@contains(double):140:value <= this.upper |==> false
+123:ROR:<=(double,double):TRUE(double,double):org.jfree.data.Range@contains(double):140:value <= this.upper |==> true
+124:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.Range@contains(double):140:value >= this.lower && value <= this.upper |==> value >= this.lower != value <= this.upper
+125:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.Range@contains(double):140:value >= this.lower && value <= this.upper |==> value >= this.lower == value <= this.upper
+126:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.Range@contains(double):140:value >= this.lower && value <= this.upper |==> false
+127:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.Range@contains(double):140:value >= this.lower && value <= this.upper |==> value >= this.lower
+128:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.Range@contains(double):140:value >= this.lower && value <= this.upper |==> value <= this.upper
+129:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.Range@contains(double):140:value >= this.lower && value <= this.upper |==> true
+130:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.Range@contains(double):140:value >= this.lower && value <= this.upper |==> value >= this.lower || value <= this.upper
+131:ROR:<=(double,double):!=(double,double):org.jfree.data.Range@intersects(double,double):153:b0 <= this.lower |==> b0 != this.lower
+132:ROR:<=(double,double):<(double,double):org.jfree.data.Range@intersects(double,double):153:b0 <= this.lower |==> b0 < this.lower
+133:ROR:<=(double,double):==(double,double):org.jfree.data.Range@intersects(double,double):153:b0 <= this.lower |==> b0 == this.lower
+134:ROR:<=(double,double):>(double,double):org.jfree.data.Range@intersects(double,double):153:b0 <= this.lower |==> b0 > this.lower
+135:ROR:<=(double,double):>=(double,double):org.jfree.data.Range@intersects(double,double):153:b0 <= this.lower |==> b0 >= this.lower
+136:ROR:<=(double,double):FALSE(double,double):org.jfree.data.Range@intersects(double,double):153:b0 <= this.lower |==> false
+137:ROR:<=(double,double):TRUE(double,double):org.jfree.data.Range@intersects(double,double):153:b0 <= this.lower |==> true
+138:ROR:>(double,double):!=(double,double):org.jfree.data.Range@intersects(double,double):154:b1 > this.lower |==> b1 != this.lower
+139:ROR:>(double,double):<(double,double):org.jfree.data.Range@intersects(double,double):154:b1 > this.lower |==> b1 < this.lower
+140:ROR:>(double,double):<=(double,double):org.jfree.data.Range@intersects(double,double):154:b1 > this.lower |==> b1 <= this.lower
+141:ROR:>(double,double):==(double,double):org.jfree.data.Range@intersects(double,double):154:b1 > this.lower |==> b1 == this.lower
+142:ROR:>(double,double):>=(double,double):org.jfree.data.Range@intersects(double,double):154:b1 > this.lower |==> b1 >= this.lower
+143:ROR:>(double,double):FALSE(double,double):org.jfree.data.Range@intersects(double,double):154:b1 > this.lower |==> false
+144:ROR:>(double,double):TRUE(double,double):org.jfree.data.Range@intersects(double,double):154:b1 > this.lower |==> true
+145:ROR:<(double,double):!=(double,double):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper |==> b0 != this.upper
+146:ROR:<(double,double):<=(double,double):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper |==> b0 <= this.upper
+147:ROR:<(double,double):==(double,double):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper |==> b0 == this.upper
+148:ROR:<(double,double):>(double,double):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper |==> b0 > this.upper
+149:ROR:<(double,double):>=(double,double):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper |==> b0 >= this.upper
+150:ROR:<(double,double):FALSE(double,double):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper |==> false
+151:ROR:<(double,double):TRUE(double,double):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper |==> true
+152:ROR:>=(double,double):!=(double,double):org.jfree.data.Range@intersects(double,double):157:b1 >= b0 |==> b1 != b0
+153:ROR:>=(double,double):<(double,double):org.jfree.data.Range@intersects(double,double):157:b1 >= b0 |==> b1 < b0
+154:ROR:>=(double,double):<=(double,double):org.jfree.data.Range@intersects(double,double):157:b1 >= b0 |==> b1 <= b0
+155:ROR:>=(double,double):==(double,double):org.jfree.data.Range@intersects(double,double):157:b1 >= b0 |==> b1 == b0
+156:ROR:>=(double,double):>(double,double):org.jfree.data.Range@intersects(double,double):157:b1 >= b0 |==> b1 > b0
+157:ROR:>=(double,double):FALSE(double,double):org.jfree.data.Range@intersects(double,double):157:b1 >= b0 |==> false
+158:ROR:>=(double,double):TRUE(double,double):org.jfree.data.Range@intersects(double,double):157:b1 >= b0 |==> true
+159:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper && b1 >= b0 |==> b0 < this.upper != b1 >= b0
+160:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper && b1 >= b0 |==> b0 < this.upper == b1 >= b0
+161:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper && b1 >= b0 |==> false
+162:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper && b1 >= b0 |==> b0 < this.upper
+163:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper && b1 >= b0 |==> b1 >= b0
+164:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper && b1 >= b0 |==> true
+165:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.Range@intersects(double,double):157:b0 < this.upper && b1 >= b0 |==> b0 < this.upper || b1 >= b0
+166:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.jfree.data.Range@constrain(double):170:value |==> 0.0
+167:COR:contains(value):TRUE:org.jfree.data.Range@constrain(double):171:contains(value) |==> false
+168:COR:contains(value):FALSE:org.jfree.data.Range@constrain(double):171:contains(value) |==> true
+169:ROR:>(double,double):!=(double,double):org.jfree.data.Range@constrain(double):172:value > this.upper |==> value != this.upper
+170:ROR:>(double,double):<(double,double):org.jfree.data.Range@constrain(double):172:value > this.upper |==> value < this.upper
+171:ROR:>(double,double):<=(double,double):org.jfree.data.Range@constrain(double):172:value > this.upper |==> value <= this.upper
+172:ROR:>(double,double):==(double,double):org.jfree.data.Range@constrain(double):172:value > this.upper |==> value == this.upper
+173:ROR:>(double,double):>=(double,double):org.jfree.data.Range@constrain(double):172:value > this.upper |==> value >= this.upper
+174:ROR:>(double,double):FALSE(double,double):org.jfree.data.Range@constrain(double):172:value > this.upper |==> false
+175:ROR:>(double,double):TRUE(double,double):org.jfree.data.Range@constrain(double):172:value > this.upper |==> true
+176:STD:<ASSIGN>:<NO-OP>:org.jfree.data.Range@constrain(double):173:result = this.upper |==> <NO-OP>
+177:ROR:<(double,double):!=(double,double):org.jfree.data.Range@constrain(double):175:value < this.lower |==> value != this.lower
+178:ROR:<(double,double):<=(double,double):org.jfree.data.Range@constrain(double):175:value < this.lower |==> value <= this.lower
+179:ROR:<(double,double):==(double,double):org.jfree.data.Range@constrain(double):175:value < this.lower |==> value == this.lower
+180:ROR:<(double,double):>(double,double):org.jfree.data.Range@constrain(double):175:value < this.lower |==> value > this.lower
+181:ROR:<(double,double):>=(double,double):org.jfree.data.Range@constrain(double):175:value < this.lower |==> value >= this.lower
+182:ROR:<(double,double):FALSE(double,double):org.jfree.data.Range@constrain(double):175:value < this.lower |==> false
+183:ROR:<(double,double):TRUE(double,double):org.jfree.data.Range@constrain(double):175:value < this.lower |==> true
+184:STD:<ASSIGN>:<NO-OP>:org.jfree.data.Range@constrain(double):176:result = this.lower |==> <NO-OP>
+185:EVR:<IDENTIFIER(double)>:<DEFAULT>:org.jfree.data.Range@constrain(double):179:result |==> 0.0
+186:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):199:range1 == null |==> range1 != null
+187:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):199:range1 == null |==> false
+188:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):199:range1 == null |==> true
+189:EVR:<IDENTIFIER(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):200:range2 |==> null
+190:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):203:range2 == null |==> range2 != null
+191:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):203:range2 == null |==> false
+192:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):203:range2 == null |==> true
+193:EVR:<IDENTIFIER(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):204:range1 |==> null
+194:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):207:Math.min(range1.getLowerBound(), range2.getLowerBound()) |==> 0.0
+195:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):209:Math.max(range1.getUpperBound(), range2.getUpperBound()) |==> 0.0
+196:EVR:<NEW_CLASS(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.Range@combine(org.jfree.data.Range,org.jfree.data.Range):211:new Range(l, u) |==> null
+197:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):228:range == null |==> range != null
+198:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):228:range == null |==> false
+199:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):228:range == null |==> true
+200:STD:<RETURN>:<NO-OP>:org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):229:return new Range(value, value); |==> <NO-OP>
+201:ROR:<(double,double):!=(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):231:value < range.getLowerBound() |==> value != range.getLowerBound()
+202:ROR:<(double,double):<=(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):231:value < range.getLowerBound() |==> value <= range.getLowerBound()
+203:ROR:<(double,double):==(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):231:value < range.getLowerBound() |==> value == range.getLowerBound()
+204:ROR:<(double,double):>(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):231:value < range.getLowerBound() |==> value > range.getLowerBound()
+205:ROR:<(double,double):>=(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):231:value < range.getLowerBound() |==> value >= range.getLowerBound()
+206:ROR:<(double,double):FALSE(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):231:value < range.getLowerBound() |==> false
+207:ROR:<(double,double):TRUE(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):231:value < range.getLowerBound() |==> true
+208:EVR:<NEW_CLASS(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):232:new Range(value, range.getUpperBound()) |==> null
+209:ROR:>(double,double):!=(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):234:value > range.getUpperBound() |==> value != range.getUpperBound()
+210:ROR:>(double,double):<(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):234:value > range.getUpperBound() |==> value < range.getUpperBound()
+211:ROR:>(double,double):<=(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):234:value > range.getUpperBound() |==> value <= range.getUpperBound()
+212:ROR:>(double,double):==(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):234:value > range.getUpperBound() |==> value == range.getUpperBound()
+213:ROR:>(double,double):>=(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):234:value > range.getUpperBound() |==> value >= range.getUpperBound()
+214:ROR:>(double,double):FALSE(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):234:value > range.getUpperBound() |==> false
+215:ROR:>(double,double):TRUE(double,double):org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):234:value > range.getUpperBound() |==> true
+216:EVR:<NEW_CLASS(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):235:new Range(range.getLowerBound(), value) |==> null
+217:EVR:<IDENTIFIER(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.Range@expandToInclude(org.jfree.data.Range,double):238:range |==> null
+218:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):255:range == null |==> range != null
+219:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):255:range == null |==> false
+220:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):255:range == null |==> true
+221:LVR:<CLASS>:<EMPTY>:org.jfree.data.Range@expand(org.jfree.data.Range,double,double):256:"Null \'range\' argument." |==> ""
+222:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:org.jfree.data.Range@expand(org.jfree.data.Range,double,double):258:range.getLength() |==> 0.0
+223:AOR:*(double,double):%(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):259:length * lowerMargin |==> length % lowerMargin
+224:AOR:*(double,double):+(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):259:length * lowerMargin |==> length + lowerMargin
+225:AOR:*(double,double):-(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):259:length * lowerMargin |==> length - lowerMargin
+226:AOR:*(double,double):/(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):259:length * lowerMargin |==> length / lowerMargin
+227:AOR:*(double,double):%(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):260:length * upperMargin |==> length % upperMargin
+228:AOR:*(double,double):+(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):260:length * upperMargin |==> length + upperMargin
+229:AOR:*(double,double):-(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):260:length * upperMargin |==> length - upperMargin
+230:AOR:*(double,double):/(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):260:length * upperMargin |==> length / upperMargin
+231:AOR:-(double,double):%(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):261:range.getLowerBound() - lower |==> range.getLowerBound() % lower
+232:AOR:-(double,double):*(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):261:range.getLowerBound() - lower |==> range.getLowerBound() * lower
+233:AOR:-(double,double):+(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):261:range.getLowerBound() - lower |==> range.getLowerBound() + lower
+234:AOR:-(double,double):/(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):261:range.getLowerBound() - lower |==> range.getLowerBound() / lower
+235:AOR:+(double,double):%(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):262:range.getUpperBound() + upper |==> range.getUpperBound() % upper
+236:AOR:+(double,double):*(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):262:range.getUpperBound() + upper |==> range.getUpperBound() * upper
+237:AOR:+(double,double):-(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):262:range.getUpperBound() + upper |==> range.getUpperBound() - upper
+238:AOR:+(double,double):/(double,double):org.jfree.data.Range@expand(org.jfree.data.Range,double,double):262:range.getUpperBound() + upper |==> range.getUpperBound() / upper
+239:LVR:FALSE:TRUE:org.jfree.data.Range@shift(org.jfree.data.Range,double):274:false |==> true
+240:COR:allowZeroCrossing:TRUE:org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):290:allowZeroCrossing |==> false
+241:COR:allowZeroCrossing:FALSE:org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):290:allowZeroCrossing |==> true
+242:AOR:+(double,double):%(double,double):org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):291:base.getLowerBound() + delta |==> base.getLowerBound() % delta
+243:AOR:+(double,double):*(double,double):org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):291:base.getLowerBound() + delta |==> base.getLowerBound() * delta
+244:AOR:+(double,double):-(double,double):org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):291:base.getLowerBound() + delta |==> base.getLowerBound() - delta
+245:AOR:+(double,double):/(double,double):org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):291:base.getLowerBound() + delta |==> base.getLowerBound() / delta
+246:AOR:+(double,double):%(double,double):org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):292:base.getUpperBound() + delta |==> base.getUpperBound() % delta
+247:AOR:+(double,double):*(double,double):org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):292:base.getUpperBound() + delta |==> base.getUpperBound() * delta
+248:AOR:+(double,double):-(double,double):org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):292:base.getUpperBound() + delta |==> base.getUpperBound() - delta
+249:AOR:+(double,double):/(double,double):org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):292:base.getUpperBound() + delta |==> base.getUpperBound() / delta
+250:EVR:<NEW_CLASS(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.Range@shift(org.jfree.data.Range,double,boolean):295:new Range(shiftWithNoZeroCrossing(base.getLowerBound(), delta), shiftWithNoZeroCrossing(base.getUpperBound(), delta)) |==> null
+251:LVR:0:POS:org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:0.0 |==> 1.0
+252:LVR:0:NEG:org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:0.0 |==> -1.0
+253:ROR:>(double,double):!=(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:value > 0.0 |==> value != 0.0
+254:ROR:>(double,double):<(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:value > 0.0 |==> value < 0.0
+255:ROR:>(double,double):<=(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:value > 0.0 |==> value <= 0.0
+256:ROR:>(double,double):==(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:value > 0.0 |==> value == 0.0
+257:ROR:>(double,double):>=(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:value > 0.0 |==> value >= 0.0
+258:ROR:>(double,double):FALSE(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:value > 0.0 |==> false
+259:ROR:>(double,double):TRUE(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):311:value > 0.0 |==> true
+260:AOR:+(double,double):%(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):312:value + delta |==> value % delta
+261:AOR:+(double,double):*(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):312:value + delta |==> value * delta
+262:AOR:+(double,double):-(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):312:value + delta |==> value - delta
+263:AOR:+(double,double):/(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):312:value + delta |==> value / delta
+264:LVR:0:POS:org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):312:0.0 |==> 1.0
+265:LVR:0:NEG:org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):312:0.0 |==> -1.0
+266:LVR:0:POS:org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:0.0 |==> 1.0
+267:LVR:0:NEG:org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:0.0 |==> -1.0
+268:ROR:<(double,double):!=(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:value < 0.0 |==> value != 0.0
+269:ROR:<(double,double):<=(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:value < 0.0 |==> value <= 0.0
+270:ROR:<(double,double):==(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:value < 0.0 |==> value == 0.0
+271:ROR:<(double,double):>(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:value < 0.0 |==> value > 0.0
+272:ROR:<(double,double):>=(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:value < 0.0 |==> value >= 0.0
+273:ROR:<(double,double):FALSE(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:value < 0.0 |==> false
+274:ROR:<(double,double):TRUE(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):314:value < 0.0 |==> true
+275:AOR:+(double,double):%(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):315:value + delta |==> value % delta
+276:AOR:+(double,double):*(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):315:value + delta |==> value * delta
+277:AOR:+(double,double):-(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):315:value + delta |==> value - delta
+278:AOR:+(double,double):/(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):315:value + delta |==> value / delta
+279:LVR:0:POS:org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):315:0.0 |==> 1.0
+280:LVR:0:NEG:org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):315:0.0 |==> -1.0
+281:AOR:+(double,double):%(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):318:value + delta |==> value % delta
+282:AOR:+(double,double):*(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):318:value + delta |==> value * delta
+283:AOR:+(double,double):-(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):318:value + delta |==> value - delta
+284:AOR:+(double,double):/(double,double):org.jfree.data.Range@shiftWithNoZeroCrossing(double,double):318:value + delta |==> value / delta
+285:LVR:FALSE:TRUE:org.jfree.data.Range@equals(java.lang.Object):331:false |==> true
+286:STD:<RETURN>:<NO-OP>:org.jfree.data.Range@equals(java.lang.Object):331:return Config.__M_NO == 0 && Config.COVERED(285, 285) ? false : Config.__M_NO == 285 ? true : false; |==> <NO-OP>
+287:EVR:<TYPE_CAST(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.Range@equals(java.lang.Object):333:(Range)obj |==> null
+288:ROR:==(double,double):!=(double,double):org.jfree.data.Range@equals(java.lang.Object):334:this.lower == range.lower |==> this.lower != range.lower
+289:ROR:==(double,double):<(double,double):org.jfree.data.Range@equals(java.lang.Object):334:this.lower == range.lower |==> this.lower < range.lower
+290:ROR:==(double,double):<=(double,double):org.jfree.data.Range@equals(java.lang.Object):334:this.lower == range.lower |==> this.lower <= range.lower
+291:ROR:==(double,double):>(double,double):org.jfree.data.Range@equals(java.lang.Object):334:this.lower == range.lower |==> this.lower > range.lower
+292:ROR:==(double,double):>=(double,double):org.jfree.data.Range@equals(java.lang.Object):334:this.lower == range.lower |==> this.lower >= range.lower
+293:ROR:==(double,double):FALSE(double,double):org.jfree.data.Range@equals(java.lang.Object):334:this.lower == range.lower |==> false
+294:ROR:==(double,double):TRUE(double,double):org.jfree.data.Range@equals(java.lang.Object):334:this.lower == range.lower |==> true
+295:LVR:FALSE:TRUE:org.jfree.data.Range@equals(java.lang.Object):335:false |==> true
+296:STD:<RETURN>:<NO-OP>:org.jfree.data.Range@equals(java.lang.Object):335:return Config.__M_NO == 0 && Config.COVERED(295, 295) ? false : Config.__M_NO == 295 ? true : false; |==> <NO-OP>
+297:ROR:==(double,double):!=(double,double):org.jfree.data.Range@equals(java.lang.Object):337:this.upper == range.upper |==> this.upper != range.upper
+298:ROR:==(double,double):<(double,double):org.jfree.data.Range@equals(java.lang.Object):337:this.upper == range.upper |==> this.upper < range.upper
+299:ROR:==(double,double):<=(double,double):org.jfree.data.Range@equals(java.lang.Object):337:this.upper == range.upper |==> this.upper <= range.upper
+300:ROR:==(double,double):>(double,double):org.jfree.data.Range@equals(java.lang.Object):337:this.upper == range.upper |==> this.upper > range.upper
+301:ROR:==(double,double):>=(double,double):org.jfree.data.Range@equals(java.lang.Object):337:this.upper == range.upper |==> this.upper >= range.upper
+302:ROR:==(double,double):FALSE(double,double):org.jfree.data.Range@equals(java.lang.Object):337:this.upper == range.upper |==> false
+303:ROR:==(double,double):TRUE(double,double):org.jfree.data.Range@equals(java.lang.Object):337:this.upper == range.upper |==> true
+304:LVR:FALSE:TRUE:org.jfree.data.Range@equals(java.lang.Object):338:false |==> true
+305:STD:<RETURN>:<NO-OP>:org.jfree.data.Range@equals(java.lang.Object):338:return Config.__M_NO == 0 && Config.COVERED(304, 304) ? false : Config.__M_NO == 304 ? true : false; |==> <NO-OP>
+306:LVR:TRUE:FALSE:org.jfree.data.Range@equals(java.lang.Object):340:true |==> false
+307:EVR:<METHOD_INVOCATION(long)>:<DEFAULT>:org.jfree.data.Range@hashCode():351:Double.doubleToLongBits(this.lower) |==> 0L
+308:LVR:POS:0:org.jfree.data.Range@hashCode():352:32 |==> 0
+309:LVR:POS:NEG:org.jfree.data.Range@hashCode():352:32 |==> -32
+310:SOR:>>>(long,int):<<(long,int):org.jfree.data.Range@hashCode():352:temp >>> 32 |==> temp << 32
+311:SOR:>>>(long,int):>>(long,int):org.jfree.data.Range@hashCode():352:temp >>> 32 |==> temp >> 32
+312:LOR:^(long,long):&(long,long):org.jfree.data.Range@hashCode():352:temp ^ (temp >>> 32) |==> temp & (temp >>> 32)
+313:LOR:^(long,long):|(long,long):org.jfree.data.Range@hashCode():352:temp ^ (temp >>> 32) |==> temp | (temp >>> 32)
+314:STD:<ASSIGN>:<NO-OP>:org.jfree.data.Range@hashCode():353:temp = Double.doubleToLongBits(this.upper) |==> <NO-OP>
+315:LVR:POS:0:org.jfree.data.Range@hashCode():354:29 |==> 0
+316:LVR:POS:NEG:org.jfree.data.Range@hashCode():354:29 |==> -29
+317:AOR:*(int,int):%(int,int):org.jfree.data.Range@hashCode():354:29 * result |==> 29 % result
+318:AOR:*(int,int):+(int,int):org.jfree.data.Range@hashCode():354:29 * result |==> 29 + result
+319:AOR:*(int,int):-(int,int):org.jfree.data.Range@hashCode():354:29 * result |==> 29 - result
+320:AOR:*(int,int):/(int,int):org.jfree.data.Range@hashCode():354:29 * result |==> 29 / result
+321:LVR:POS:0:org.jfree.data.Range@hashCode():354:32 |==> 0
+322:LVR:POS:NEG:org.jfree.data.Range@hashCode():354:32 |==> -32
+323:SOR:>>>(long,int):<<(long,int):org.jfree.data.Range@hashCode():354:temp >>> 32 |==> temp << 32
+324:SOR:>>>(long,int):>>(long,int):org.jfree.data.Range@hashCode():354:temp >>> 32 |==> temp >> 32
+325:LOR:^(long,long):&(long,long):org.jfree.data.Range@hashCode():354:temp ^ (temp >>> 32) |==> temp & (temp >>> 32)
+326:LOR:^(long,long):|(long,long):org.jfree.data.Range@hashCode():354:temp ^ (temp >>> 32) |==> temp | (temp >>> 32)
+327:AOR:+(int,int):%(int,int):org.jfree.data.Range@hashCode():354:29 * result + (int)(temp ^ (temp >>> 32)) |==> 29 * result % (int)(temp ^ (temp >>> 32))
+328:AOR:+(int,int):*(int,int):org.jfree.data.Range@hashCode():354:29 * result + (int)(temp ^ (temp >>> 32)) |==> 29 * result * (int)(temp ^ (temp >>> 32))
+329:AOR:+(int,int):-(int,int):org.jfree.data.Range@hashCode():354:29 * result + (int)(temp ^ (temp >>> 32)) |==> 29 * result - (int)(temp ^ (temp >>> 32))
+330:AOR:+(int,int):/(int,int):org.jfree.data.Range@hashCode():354:29 * result + (int)(temp ^ (temp >>> 32)) |==> 29 * result / (int)(temp ^ (temp >>> 32))
+331:STD:<ASSIGN>:<NO-OP>:org.jfree.data.Range@hashCode():354:result = 29 * result + (int)(temp ^ (temp >>> 32)) |==> <NO-OP>
+332:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.jfree.data.Range@hashCode():355:result |==> 0
+333:LVR:<CLASS>:<EMPTY>:org.jfree.data.Range@toString():365:"Range[" |==> ""
+334:LVR:<CLASS>:<EMPTY>:org.jfree.data.Range@toString():365:"," |==> ""
+335:LVR:<CLASS>:<EMPTY>:org.jfree.data.Range@toString():365:"]" |==> ""
+336:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObject@<init>(java.lang.Comparable,java.lang.Object):75:this.key = key |==> <NO-OP>
+337:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObject@<init>(java.lang.Comparable,java.lang.Object):76:this.object = object |==> <NO-OP>
+338:EVR:<MEMBER_SELECT(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.KeyedObject@getKey():85:this.key |==> null
+339:EVR:<MEMBER_SELECT(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObject@getObject():94:this.object |==> null
+340:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObject@setObject(java.lang.Object):103:this.object = object |==> <NO-OP>
+341:EVR:<TYPE_CAST(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObject@clone():117:(KeyedObject)super.clone() |==> null
+342:EVR:<TYPE_CAST(org.jfree.chart.util.PublicCloneable)>:<DEFAULT>:org.jfree.data.KeyedObject@clone():119:(PublicCloneable)this.object |==> null
+343:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObject@clone():120:clone.object = pc.clone() |==> <NO-OP>
+344:EVR:<IDENTIFIER(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObject@clone():122:clone |==> null
+345:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObject@equals(java.lang.Object):134:obj == this |==> obj != this
+346:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObject@equals(java.lang.Object):134:obj == this |==> false
+347:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObject@equals(java.lang.Object):134:obj == this |==> true
+348:LVR:TRUE:FALSE:org.jfree.data.KeyedObject@equals(java.lang.Object):135:true |==> false
+349:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObject@equals(java.lang.Object):135:return Config.__M_NO == 0 && Config.COVERED(348, 348) ? true : Config.__M_NO == 348 ? false : true; |==> <NO-OP>
+350:LVR:FALSE:TRUE:org.jfree.data.KeyedObject@equals(java.lang.Object):139:false |==> true
+351:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObject@equals(java.lang.Object):139:return Config.__M_NO == 0 && Config.COVERED(350, 350) ? false : Config.__M_NO == 350 ? true : false; |==> <NO-OP>
+352:EVR:<TYPE_CAST(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObject@equals(java.lang.Object):141:(KeyedObject)obj |==> null
+353:COR:ObjectUtilities.equal(this.key, that.key):TRUE:org.jfree.data.KeyedObject@equals(java.lang.Object):142:ObjectUtilities.equal(this.key, that.key) |==> false
+354:COR:ObjectUtilities.equal(this.key, that.key):FALSE:org.jfree.data.KeyedObject@equals(java.lang.Object):142:ObjectUtilities.equal(this.key, that.key) |==> true
+355:LVR:FALSE:TRUE:org.jfree.data.KeyedObject@equals(java.lang.Object):143:false |==> true
+356:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObject@equals(java.lang.Object):143:return Config.__M_NO == 0 && Config.COVERED(355, 355) ? false : Config.__M_NO == 355 ? true : false; |==> <NO-OP>
+357:COR:ObjectUtilities.equal(this.object, that.object):TRUE:org.jfree.data.KeyedObject@equals(java.lang.Object):146:ObjectUtilities.equal(this.object, that.object) |==> false
+358:COR:ObjectUtilities.equal(this.object, that.object):FALSE:org.jfree.data.KeyedObject@equals(java.lang.Object):146:ObjectUtilities.equal(this.object, that.object) |==> true
+359:LVR:FALSE:TRUE:org.jfree.data.KeyedObject@equals(java.lang.Object):147:false |==> true
+360:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObject@equals(java.lang.Object):147:return Config.__M_NO == 0 && Config.COVERED(359, 359) ? false : Config.__M_NO == 359 ? true : false; |==> <NO-OP>
+361:LVR:TRUE:FALSE:org.jfree.data.KeyedObject@equals(java.lang.Object):150:true |==> false
+362:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects@<init>():68:this.data = new java.util.ArrayList() |==> <NO-OP>
+363:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects@getItemCount():77:this.data.size() |==> 0
+364:EVR:<TYPE_CAST(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObjects@getObject(int):91:(KeyedObject)this.data.get(item) |==> null
+365:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getObject(int):92:kobj != null |==> kobj == null
+366:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getObject(int):92:kobj != null |==> false
+367:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getObject(int):92:kobj != null |==> true
+368:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects@getObject(int):93:result = kobj.getObject() |==> <NO-OP>
+369:EVR:<IDENTIFIER(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObjects@getObject(int):95:result |==> null
+370:EVR:<TYPE_CAST(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObjects@getKey(int):111:(KeyedObject)this.data.get(index) |==> null
+371:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getKey(int):112:item != null |==> item == null
+372:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getKey(int):112:item != null |==> false
+373:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getKey(int):112:item != null |==> true
+374:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects@getKey(int):113:result = item.getKey() |==> <NO-OP>
+375:EVR:<IDENTIFIER(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.KeyedObjects@getKey(int):115:result |==> null
+376:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):128:key == null |==> key != null
+377:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):128:key == null |==> false
+378:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):128:key == null |==> true
+379:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):129:"Null \'key\' argument." |==> ""
+380:LVR:0:POS:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):131:0 |==> 1
+381:LVR:0:NEG:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):131:0 |==> -1
+382:EVR:<METHOD_INVOCATION(java.util.Iterator)>:<DEFAULT>:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):132:this.data.iterator() |==> null
+383:EVR:<TYPE_CAST(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):134:(KeyedObject)iterator.next() |==> null
+384:COR:ko.getKey().equals(key):TRUE:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):135:ko.getKey().equals(key) |==> false
+385:COR:ko.getKey().equals(key):FALSE:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):135:ko.getKey().equals(key) |==> true
+386:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):136:return i; |==> <NO-OP>
+387:STD:<INC>:<NO-OP>:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):138:i++ |==> <NO-OP>
+388:LVR:NEG:0:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):140:-1 |==> 0
+389:LVR:NEG:POS:org.jfree.data.KeyedObjects@getIndex(java.lang.Comparable):140:-1 |==> 1
+390:EVR:<NEW_CLASS(java.util.ArrayList)>:<DEFAULT>:org.jfree.data.KeyedObjects@getKeys():149:new java.util.ArrayList() |==> null
+391:EVR:<METHOD_INVOCATION(java.util.Iterator)>:<DEFAULT>:org.jfree.data.KeyedObjects@getKeys():150:this.data.iterator() |==> null
+392:EVR:<TYPE_CAST(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObjects@getKeys():152:(KeyedObject)iterator.next() |==> null
+393:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@getKeys():153:result.add(ko.getKey()) |==> <NO-OP>
+394:EVR:<IDENTIFIER(java.util.List)>:<DEFAULT>:org.jfree.data.KeyedObjects@getKeys():155:result |==> null
+395:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):169:getIndex(key) |==> 0
+396:LVR:0:POS:org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:0 |==> 1
+397:LVR:0:NEG:org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:0 |==> -1
+398:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:index < 0 |==> index != 0
+399:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:index < 0 |==> index <= 0
+400:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:index < 0 |==> index == 0
+401:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:index < 0 |==> index > 0
+402:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:index < 0 |==> index >= 0
+403:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:index < 0 |==> false
+404:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):170:index < 0 |==> true
+405:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):171:"The key (" |==> ""
+406:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):172:") is not recognised." |==> ""
+407:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObjects@getObject(java.lang.Comparable):174:getObject(index) |==> null
+408:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@addObject(java.lang.Comparable,java.lang.Object):187:setObject(key, object) |==> <NO-OP>
+409:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):201:getIndex(key) |==> 0
+410:LVR:0:POS:org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:0 |==> 1
+411:LVR:0:NEG:org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:0 |==> -1
+412:ROR:>=(int,int):!=(int,int):org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:keyIndex >= 0 |==> keyIndex != 0
+413:ROR:>=(int,int):<(int,int):org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:keyIndex >= 0 |==> keyIndex < 0
+414:ROR:>=(int,int):<=(int,int):org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:keyIndex >= 0 |==> keyIndex <= 0
+415:ROR:>=(int,int):==(int,int):org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:keyIndex >= 0 |==> keyIndex == 0
+416:ROR:>=(int,int):>(int,int):org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:keyIndex >= 0 |==> keyIndex > 0
+417:ROR:>=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:keyIndex >= 0 |==> false
+418:ROR:>=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):202:keyIndex >= 0 |==> true
+419:EVR:<TYPE_CAST(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):203:(KeyedObject)this.data.get(keyIndex) |==> null
+420:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):204:ko.setObject(object) |==> <NO-OP>
+421:EVR:<NEW_CLASS(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):207:new KeyedObject(key, object) |==> null
+422:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@setObject(java.lang.Comparable,java.lang.Object):208:this.data.add(ko) |==> <NO-OP>
+423:LVR:0:POS:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:0 |==> 1
+424:LVR:0:NEG:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:0 |==> -1
+425:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 |==> position != 0
+426:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 |==> position <= 0
+427:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 |==> position == 0
+428:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 |==> position > 0
+429:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 |==> position >= 0
+430:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 |==> false
+431:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 |==> true
+432:ROR:>(int,int):!=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position > this.data.size() |==> position != this.data.size()
+433:ROR:>(int,int):<(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position > this.data.size() |==> position < this.data.size()
+434:ROR:>(int,int):<=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position > this.data.size() |==> position <= this.data.size()
+435:ROR:>(int,int):==(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position > this.data.size() |==> position == this.data.size()
+436:ROR:>(int,int):>=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position > this.data.size() |==> position >= this.data.size()
+437:ROR:>(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position > this.data.size() |==> false
+438:ROR:>(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position > this.data.size() |==> true
+439:COR:||(boolean,boolean):!=(boolean,boolean):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 || position > this.data.size() |==> position < 0 != position > this.data.size()
+440:COR:||(boolean,boolean):&&(boolean,boolean):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 || position > this.data.size() |==> position < 0 && position > this.data.size()
+441:COR:||(boolean,boolean):==(boolean,boolean):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 || position > this.data.size() |==> position < 0 == position > this.data.size()
+442:COR:||(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 || position > this.data.size() |==> false
+443:COR:||(boolean,boolean):LHS(boolean,boolean):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 || position > this.data.size() |==> position < 0
+444:COR:||(boolean,boolean):RHS(boolean,boolean):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 || position > this.data.size() |==> position > this.data.size()
+445:COR:||(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):225:position < 0 || position > this.data.size() |==> true
+446:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):226:"\'position\' out of bounds." |==> ""
+447:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):228:key == null |==> key != null
+448:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):228:key == null |==> false
+449:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):228:key == null |==> true
+450:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):229:"Null \'key\' argument." |==> ""
+451:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):231:getIndex(key) |==> 0
+452:LVR:0:POS:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:0 |==> 1
+453:LVR:0:NEG:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:0 |==> -1
+454:ROR:>=(int,int):!=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:pos >= 0 |==> pos != 0
+455:ROR:>=(int,int):<(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:pos >= 0 |==> pos < 0
+456:ROR:>=(int,int):<=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:pos >= 0 |==> pos <= 0
+457:ROR:>=(int,int):==(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:pos >= 0 |==> pos == 0
+458:ROR:>=(int,int):>(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:pos >= 0 |==> pos > 0
+459:ROR:>=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:pos >= 0 |==> false
+460:ROR:>=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):232:pos >= 0 |==> true
+461:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):233:this.data.remove(pos) |==> <NO-OP>
+462:EVR:<NEW_CLASS(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):235:new KeyedObject(key, value) |==> null
+463:ROR:<=(int,int):!=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):236:position <= this.data.size() |==> position != this.data.size()
+464:ROR:<=(int,int):<(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):236:position <= this.data.size() |==> position < this.data.size()
+465:ROR:<=(int,int):==(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):236:position <= this.data.size() |==> position == this.data.size()
+466:ROR:<=(int,int):>(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):236:position <= this.data.size() |==> position > this.data.size()
+467:ROR:<=(int,int):>=(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):236:position <= this.data.size() |==> position >= this.data.size()
+468:ROR:<=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):236:position <= this.data.size() |==> false
+469:ROR:<=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):236:position <= this.data.size() |==> true
+470:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):237:this.data.add(position, item) |==> <NO-OP>
+471:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@insertValue(int,java.lang.Comparable,java.lang.Object):240:this.data.add(item) |==> <NO-OP>
+472:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@removeValue(int):252:this.data.remove(index) |==> <NO-OP>
+473:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):266:getIndex(key) |==> 0
+474:LVR:0:POS:org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:0 |==> 1
+475:LVR:0:NEG:org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:0 |==> -1
+476:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:index < 0 |==> index != 0
+477:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:index < 0 |==> index <= 0
+478:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:index < 0 |==> index == 0
+479:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:index < 0 |==> index > 0
+480:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:index < 0 |==> index >= 0
+481:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:index < 0 |==> false
+482:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):267:index < 0 |==> true
+483:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):268:"The key (" |==> ""
+484:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):269:") is not recognised." |==> ""
+485:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@removeValue(java.lang.Comparable):271:removeValue(index) |==> <NO-OP>
+486:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@clear():280:this.data.clear() |==> <NO-OP>
+487:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects@clone():293:(KeyedObjects)super.clone() |==> null
+488:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects@clone():294:clone.data = new java.util.ArrayList() |==> <NO-OP>
+489:EVR:<METHOD_INVOCATION(java.util.Iterator)>:<DEFAULT>:org.jfree.data.KeyedObjects@clone():295:this.data.iterator() |==> null
+490:EVR:<TYPE_CAST(org.jfree.data.KeyedObject)>:<DEFAULT>:org.jfree.data.KeyedObjects@clone():297:(KeyedObject)iterator.next() |==> null
+491:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects@clone():298:clone.data.add(ko.clone()) |==> <NO-OP>
+492:EVR:<IDENTIFIER(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects@clone():300:clone |==> null
+493:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):312:obj == this |==> obj != this
+494:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):312:obj == this |==> false
+495:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):312:obj == this |==> true
+496:LVR:TRUE:FALSE:org.jfree.data.KeyedObjects@equals(java.lang.Object):313:true |==> false
+497:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects@equals(java.lang.Object):313:return Config.__M_NO == 0 && Config.COVERED(496, 496) ? true : Config.__M_NO == 496 ? false : true; |==> <NO-OP>
+498:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects@equals(java.lang.Object):316:false |==> true
+499:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects@equals(java.lang.Object):316:return Config.__M_NO == 0 && Config.COVERED(498, 498) ? false : Config.__M_NO == 498 ? true : false; |==> <NO-OP>
+500:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects@equals(java.lang.Object):318:(KeyedObjects)obj |==> null
+501:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects@equals(java.lang.Object):319:getItemCount() |==> 0
+502:ROR:!=(int,int):<(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):320:count != that.getItemCount() |==> count < that.getItemCount()
+503:ROR:!=(int,int):<=(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):320:count != that.getItemCount() |==> count <= that.getItemCount()
+504:ROR:!=(int,int):==(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):320:count != that.getItemCount() |==> count == that.getItemCount()
+505:ROR:!=(int,int):>(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):320:count != that.getItemCount() |==> count > that.getItemCount()
+506:ROR:!=(int,int):>=(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):320:count != that.getItemCount() |==> count >= that.getItemCount()
+507:ROR:!=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):320:count != that.getItemCount() |==> false
+508:ROR:!=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):320:count != that.getItemCount() |==> true
+509:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects@equals(java.lang.Object):321:false |==> true
+510:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects@equals(java.lang.Object):321:return Config.__M_NO == 0 && Config.COVERED(509, 509) ? false : Config.__M_NO == 509 ? true : false; |==> <NO-OP>
+511:LVR:0:POS:org.jfree.data.KeyedObjects@equals(java.lang.Object):324:0 |==> 1
+512:LVR:0:NEG:org.jfree.data.KeyedObjects@equals(java.lang.Object):324:0 |==> -1
+513:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):324:i < count |==> i != count
+514:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):324:i < count |==> i <= count
+515:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):324:i < count |==> i == count
+516:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):324:i < count |==> i > count
+517:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):324:i < count |==> i >= count
+518:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):324:i < count |==> false
+519:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects@equals(java.lang.Object):324:i < count |==> true
+520:EVR:<METHOD_INVOCATION(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.KeyedObjects@equals(java.lang.Object):325:getKey(i) |==> null
+521:EVR:<METHOD_INVOCATION(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.KeyedObjects@equals(java.lang.Object):326:that.getKey(i) |==> null
+522:COR:k1.equals(k2):TRUE:org.jfree.data.KeyedObjects@equals(java.lang.Object):327:k1.equals(k2) |==> false
+523:COR:k1.equals(k2):FALSE:org.jfree.data.KeyedObjects@equals(java.lang.Object):327:k1.equals(k2) |==> true
+524:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects@equals(java.lang.Object):328:false |==> true
+525:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects@equals(java.lang.Object):328:return Config.__M_NO == 0 && Config.COVERED(524, 524) ? false : Config.__M_NO == 524 ? true : false; |==> <NO-OP>
+526:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObjects@equals(java.lang.Object):330:getObject(i) |==> null
+527:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObjects@equals(java.lang.Object):331:that.getObject(i) |==> null
+528:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):332:o1 == null |==> o1 != null
+529:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):332:o1 == null |==> false
+530:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):332:o1 == null |==> true
+531:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):333:o2 != null |==> o2 == null
+532:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):333:o2 != null |==> false
+533:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@equals(java.lang.Object):333:o2 != null |==> true
+534:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects@equals(java.lang.Object):334:false |==> true
+535:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects@equals(java.lang.Object):334:return Config.__M_NO == 0 && Config.COVERED(534, 534) ? false : Config.__M_NO == 534 ? true : false; |==> <NO-OP>
+536:COR:o1.equals(o2):TRUE:org.jfree.data.KeyedObjects@equals(java.lang.Object):338:o1.equals(o2) |==> false
+537:COR:o1.equals(o2):FALSE:org.jfree.data.KeyedObjects@equals(java.lang.Object):338:o1.equals(o2) |==> true
+538:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects@equals(java.lang.Object):339:false |==> true
+539:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects@equals(java.lang.Object):339:return Config.__M_NO == 0 && Config.COVERED(538, 538) ? false : Config.__M_NO == 538 ? true : false; |==> <NO-OP>
+540:LVR:TRUE:FALSE:org.jfree.data.KeyedObjects@equals(java.lang.Object):343:true |==> false
+541:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@hashCode():353:this.data != null |==> this.data == null
+542:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@hashCode():353:this.data != null |==> false
+543:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects@hashCode():353:this.data != null |==> true
+544:LVR:0:POS:org.jfree.data.KeyedObjects@hashCode():353:0 |==> 1
+545:LVR:0:NEG:org.jfree.data.KeyedObjects@hashCode():353:0 |==> -1
+546:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@<init>():75:this.rowKeys = new java.util.ArrayList() |==> <NO-OP>
+547:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@<init>():76:this.columnKeys = new java.util.ArrayList() |==> <NO-OP>
+548:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@<init>():77:this.rows = new java.util.ArrayList() |==> <NO-OP>
+549:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getRowCount():88:this.rowKeys.size() |==> 0
+550:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getColumnCount():99:this.columnKeys.size() |==> 0
+551:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(int,int):114:(KeyedObjects)this.rows.get(row) |==> null
+552:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(int,int):115:rowData != null |==> rowData == null
+553:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(int,int):115:rowData != null |==> false
+554:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(int,int):115:rowData != null |==> true
+555:EVR:<TYPE_CAST(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(int,int):116:(Comparable)this.columnKeys.get(column) |==> null
+556:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(int,int):117:columnKey != null |==> columnKey == null
+557:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(int,int):117:columnKey != null |==> false
+558:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(int,int):117:columnKey != null |==> true
+559:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(int,int):118:rowData.getIndex(columnKey) |==> 0
+560:LVR:0:POS:org.jfree.data.KeyedObjects2D@getObject(int,int):119:0 |==> 1
+561:LVR:0:NEG:org.jfree.data.KeyedObjects2D@getObject(int,int):119:0 |==> -1
+562:ROR:>=(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@getObject(int,int):119:index >= 0 |==> index != 0
+563:ROR:>=(int,int):<(int,int):org.jfree.data.KeyedObjects2D@getObject(int,int):119:index >= 0 |==> index < 0
+564:ROR:>=(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@getObject(int,int):119:index >= 0 |==> index <= 0
+565:ROR:>=(int,int):==(int,int):org.jfree.data.KeyedObjects2D@getObject(int,int):119:index >= 0 |==> index == 0
+566:ROR:>=(int,int):>(int,int):org.jfree.data.KeyedObjects2D@getObject(int,int):119:index >= 0 |==> index > 0
+567:ROR:>=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@getObject(int,int):119:index >= 0 |==> false
+568:ROR:>=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@getObject(int,int):119:index >= 0 |==> true
+569:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@getObject(int,int):120:result = rowData.getObject(columnKey) |==> <NO-OP>
+570:EVR:<IDENTIFIER(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(int,int):124:result |==> null
+571:EVR:<TYPE_CAST(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getRowKey(int):137:(Comparable)this.rowKeys.get(row) |==> null
+572:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getRowIndex(java.lang.Comparable):150:this.rowKeys.indexOf(key) |==> 0
+573:EVR:<METHOD_INVOCATION(java.util.List)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getRowKeys():161:Collections.unmodifiableList(this.rowKeys) |==> null
+574:EVR:<TYPE_CAST(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getColumnKey(int):174:(Comparable)this.columnKeys.get(column) |==> null
+575:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getColumnIndex(java.lang.Comparable):187:this.columnKeys.indexOf(key) |==> 0
+576:EVR:<METHOD_INVOCATION(java.util.List)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getColumnKeys():198:Collections.unmodifiableList(this.columnKeys) |==> null
+577:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):215:rowKey == null |==> rowKey != null
+578:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):215:rowKey == null |==> false
+579:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):215:rowKey == null |==> true
+580:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):216:"Null \'rowKey\' argument." |==> ""
+581:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):218:columnKey == null |==> columnKey != null
+582:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):218:columnKey == null |==> false
+583:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):218:columnKey == null |==> true
+584:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):219:"Null \'columnKey\' argument." |==> ""
+585:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):221:this.rowKeys.indexOf(rowKey) |==> 0
+586:LVR:0:POS:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:0 |==> 1
+587:LVR:0:NEG:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:0 |==> -1
+588:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:row < 0 |==> row != 0
+589:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:row < 0 |==> row <= 0
+590:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:row < 0 |==> row == 0
+591:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:row < 0 |==> row > 0
+592:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:row < 0 |==> row >= 0
+593:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:row < 0 |==> false
+594:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):222:row < 0 |==> true
+595:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):223:"Row key (" |==> ""
+596:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):224:") not recognised." |==> ""
+597:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):226:this.columnKeys.indexOf(columnKey) |==> 0
+598:LVR:0:POS:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:0 |==> 1
+599:LVR:0:NEG:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:0 |==> -1
+600:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:column < 0 |==> column != 0
+601:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:column < 0 |==> column <= 0
+602:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:column < 0 |==> column == 0
+603:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:column < 0 |==> column > 0
+604:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:column < 0 |==> column >= 0
+605:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:column < 0 |==> false
+606:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):227:column < 0 |==> true
+607:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):228:"Column key (" |==> ""
+608:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):229:") not recognised." |==> ""
+609:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):231:(KeyedObjects)this.rows.get(row) |==> null
+610:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):232:rowData.getIndex(columnKey) |==> 0
+611:LVR:0:POS:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:0 |==> 1
+612:LVR:0:NEG:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:0 |==> -1
+613:ROR:>=(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:index >= 0 |==> index != 0
+614:ROR:>=(int,int):<(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:index >= 0 |==> index < 0
+615:ROR:>=(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:index >= 0 |==> index <= 0
+616:ROR:>=(int,int):==(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:index >= 0 |==> index == 0
+617:ROR:>=(int,int):>(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:index >= 0 |==> index > 0
+618:ROR:>=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:index >= 0 |==> false
+619:ROR:>=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):233:index >= 0 |==> true
+620:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@getObject(java.lang.Comparable,java.lang.Comparable):234:rowData.getObject(index) |==> null
+621:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@addObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):250:setObject(object, rowKey, columnKey) |==> <NO-OP>
+622:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):263:rowKey == null |==> rowKey != null
+623:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):263:rowKey == null |==> false
+624:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):263:rowKey == null |==> true
+625:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):264:"Null \'rowKey\' argument." |==> ""
+626:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):266:columnKey == null |==> columnKey != null
+627:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):266:columnKey == null |==> false
+628:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):266:columnKey == null |==> true
+629:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):267:"Null \'columnKey\' argument." |==> ""
+630:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):270:this.rowKeys.indexOf(rowKey) |==> 0
+631:LVR:0:POS:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:0 |==> 1
+632:LVR:0:NEG:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:0 |==> -1
+633:ROR:>=(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:rowIndex >= 0 |==> rowIndex != 0
+634:ROR:>=(int,int):<(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:rowIndex >= 0 |==> rowIndex < 0
+635:ROR:>=(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:rowIndex >= 0 |==> rowIndex <= 0
+636:ROR:>=(int,int):==(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:rowIndex >= 0 |==> rowIndex == 0
+637:ROR:>=(int,int):>(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:rowIndex >= 0 |==> rowIndex > 0
+638:ROR:>=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:rowIndex >= 0 |==> false
+639:ROR:>=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):271:rowIndex >= 0 |==> true
+640:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):272:(KeyedObjects)this.rows.get(rowIndex) |==> null
+641:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):275:this.rowKeys.add(rowKey) |==> <NO-OP>
+642:EVR:<NEW_CLASS(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):276:new KeyedObjects() |==> null
+643:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):277:this.rows.add(row) |==> <NO-OP>
+644:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):279:row.setObject(columnKey, object) |==> <NO-OP>
+645:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):280:this.columnKeys.indexOf(columnKey) |==> 0
+646:LVR:0:POS:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:0 |==> 1
+647:LVR:0:NEG:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:0 |==> -1
+648:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:columnIndex < 0 |==> columnIndex != 0
+649:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:columnIndex < 0 |==> columnIndex <= 0
+650:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:columnIndex < 0 |==> columnIndex == 0
+651:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:columnIndex < 0 |==> columnIndex > 0
+652:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:columnIndex < 0 |==> columnIndex >= 0
+653:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:columnIndex < 0 |==> false
+654:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):281:columnIndex < 0 |==> true
+655:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable):282:this.columnKeys.add(columnKey) |==> <NO-OP>
+656:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):298:setObject(null, rowKey, columnKey) |==> <NO-OP>
+657:LVR:TRUE:FALSE:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):301:true |==> false
+658:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):302:getRowIndex(rowKey) |==> 0
+659:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):303:(KeyedObjects)this.rows.get(rowIndex) |==> null
+660:LVR:0:POS:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:0 |==> 1
+661:LVR:0:NEG:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:0 |==> -1
+662:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:row.getItemCount() |==> 0
+663:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:item < itemCount |==> item != itemCount
+664:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:item < itemCount |==> item <= itemCount
+665:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:item < itemCount |==> item == itemCount
+666:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:item < itemCount |==> item > itemCount
+667:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:item < itemCount |==> item >= itemCount
+668:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:item < itemCount |==> false
+669:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):305:item < itemCount |==> true
+670:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):307:row.getObject(item) != null |==> row.getObject(item) == null
+671:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):307:row.getObject(item) != null |==> false
+672:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):307:row.getObject(item) != null |==> true
+673:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):308:false |==> true
+674:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):308:allNull = false |==> <NO-OP>
+675:STD:<BREAK>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):309:break; |==> <NO-OP>
+676:COR:allNull:TRUE:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):313:allNull |==> false
+677:COR:allNull:FALSE:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):313:allNull |==> true
+678:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):314:this.rowKeys.remove(rowIndex) |==> <NO-OP>
+679:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):315:this.rows.remove(rowIndex) |==> <NO-OP>
+680:LVR:TRUE:FALSE:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):319:true |==> false
+681:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):319:allNull = true |==> <NO-OP>
+682:LVR:0:POS:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:0 |==> 1
+683:LVR:0:NEG:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:0 |==> -1
+684:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:this.rows.size() |==> 0
+685:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:item < itemCount |==> item != itemCount
+686:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:item < itemCount |==> item <= itemCount
+687:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:item < itemCount |==> item == itemCount
+688:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:item < itemCount |==> item > itemCount
+689:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:item < itemCount |==> item >= itemCount
+690:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:item < itemCount |==> false
+691:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):321:item < itemCount |==> true
+692:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):323:row = (KeyedObjects)this.rows.get(item) |==> <NO-OP>
+693:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):324:row.getIndex(columnKey) |==> 0
+694:LVR:0:POS:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:0 |==> 1
+695:LVR:0:NEG:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:0 |==> -1
+696:ROR:>=(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 |==> columnIndex != 0
+697:ROR:>=(int,int):<(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 |==> columnIndex < 0
+698:ROR:>=(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 |==> columnIndex <= 0
+699:ROR:>=(int,int):==(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 |==> columnIndex == 0
+700:ROR:>=(int,int):>(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 |==> columnIndex > 0
+701:ROR:>=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 |==> false
+702:ROR:>=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 |==> true
+703:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:row.getObject(columnIndex) != null |==> row.getObject(columnIndex) == null
+704:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:row.getObject(columnIndex) != null |==> false
+705:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:row.getObject(columnIndex) != null |==> true
+706:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 && row.getObject(columnIndex) != null |==> columnIndex >= 0 != (row.getObject(columnIndex) != null)
+707:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 && row.getObject(columnIndex) != null |==> columnIndex >= 0 == (row.getObject(columnIndex) != null)
+708:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 && row.getObject(columnIndex) != null |==> false
+709:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 && row.getObject(columnIndex) != null |==> columnIndex >= 0
+710:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 && row.getObject(columnIndex) != null |==> row.getObject(columnIndex) != null
+711:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 && row.getObject(columnIndex) != null |==> true
+712:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):325:columnIndex >= 0 && row.getObject(columnIndex) != null |==> columnIndex >= 0 || row.getObject(columnIndex) != null
+713:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):326:false |==> true
+714:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):326:allNull = false |==> <NO-OP>
+715:STD:<BREAK>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):327:break; |==> <NO-OP>
+716:COR:allNull:TRUE:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):331:allNull |==> false
+717:COR:allNull:FALSE:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):331:allNull |==> true
+718:LVR:0:POS:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:0 |==> 1
+719:LVR:0:NEG:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:0 |==> -1
+720:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:this.rows.size() |==> 0
+721:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:item < itemCount |==> item != itemCount
+722:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:item < itemCount |==> item <= itemCount
+723:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:item < itemCount |==> item == itemCount
+724:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:item < itemCount |==> item > itemCount
+725:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:item < itemCount |==> item >= itemCount
+726:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:item < itemCount |==> false
+727:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):332:item < itemCount |==> true
+728:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):334:row = (KeyedObjects)this.rows.get(item) |==> <NO-OP>
+729:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):335:row.getIndex(columnKey) |==> 0
+730:LVR:0:POS:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:0 |==> 1
+731:LVR:0:NEG:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:0 |==> -1
+732:ROR:>=(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:columnIndex >= 0 |==> columnIndex != 0
+733:ROR:>=(int,int):<(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:columnIndex >= 0 |==> columnIndex < 0
+734:ROR:>=(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:columnIndex >= 0 |==> columnIndex <= 0
+735:ROR:>=(int,int):==(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:columnIndex >= 0 |==> columnIndex == 0
+736:ROR:>=(int,int):>(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:columnIndex >= 0 |==> columnIndex > 0
+737:ROR:>=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:columnIndex >= 0 |==> false
+738:ROR:>=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):336:columnIndex >= 0 |==> true
+739:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):337:row.removeValue(columnIndex) |==> <NO-OP>
+740:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeObject(java.lang.Comparable,java.lang.Comparable):340:this.columnKeys.remove(columnKey) |==> <NO-OP>
+741:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeRow(int):352:this.rowKeys.remove(rowIndex) |==> <NO-OP>
+742:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeRow(int):353:this.rows.remove(rowIndex) |==> <NO-OP>
+743:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):366:getRowIndex(rowKey) |==> 0
+744:LVR:0:POS:org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:0 |==> 1
+745:LVR:0:NEG:org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:0 |==> -1
+746:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:index < 0 |==> index != 0
+747:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:index < 0 |==> index <= 0
+748:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:index < 0 |==> index == 0
+749:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:index < 0 |==> index > 0
+750:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:index < 0 |==> index >= 0
+751:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:index < 0 |==> false
+752:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):367:index < 0 |==> true
+753:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):368:"Row key (" |==> ""
+754:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):369:") not recognised." |==> ""
+755:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeRow(java.lang.Comparable):371:removeRow(index) |==> <NO-OP>
+756:EVR:<METHOD_INVOCATION(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeColumn(int):382:getColumnKey(columnIndex) |==> null
+757:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeColumn(int):383:removeColumn(columnKey) |==> <NO-OP>
+758:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):396:getColumnIndex(columnKey) |==> 0
+759:LVR:0:POS:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:0 |==> 1
+760:LVR:0:NEG:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:0 |==> -1
+761:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:index < 0 |==> index != 0
+762:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:index < 0 |==> index <= 0
+763:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:index < 0 |==> index == 0
+764:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:index < 0 |==> index > 0
+765:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:index < 0 |==> index >= 0
+766:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:index < 0 |==> false
+767:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):397:index < 0 |==> true
+768:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):398:"Column key (" |==> ""
+769:LVR:<CLASS>:<EMPTY>:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):399:") not recognised." |==> ""
+770:EVR:<METHOD_INVOCATION(java.util.Iterator)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):401:this.rows.iterator() |==> null
+771:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):403:(KeyedObjects)iterator.next() |==> null
+772:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):404:rowData.getIndex(columnKey) |==> 0
+773:LVR:0:POS:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:0 |==> 1
+774:LVR:0:NEG:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:0 |==> -1
+775:ROR:>=(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:i >= 0 |==> i != 0
+776:ROR:>=(int,int):<(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:i >= 0 |==> i < 0
+777:ROR:>=(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:i >= 0 |==> i <= 0
+778:ROR:>=(int,int):==(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:i >= 0 |==> i == 0
+779:ROR:>=(int,int):>(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:i >= 0 |==> i > 0
+780:ROR:>=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:i >= 0 |==> false
+781:ROR:>=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):405:i >= 0 |==> true
+782:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):406:rowData.removeValue(i) |==> <NO-OP>
+783:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@removeColumn(java.lang.Comparable):409:this.columnKeys.remove(columnKey) |==> <NO-OP>
+784:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):420:obj == this |==> obj != this
+785:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):420:obj == this |==> false
+786:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):420:obj == this |==> true
+787:LVR:TRUE:FALSE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):421:true |==> false
+788:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):421:return Config.__M_NO == 0 && Config.COVERED(787, 787) ? true : Config.__M_NO == 787 ? false : true; |==> <NO-OP>
+789:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):424:false |==> true
+790:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):424:return Config.__M_NO == 0 && Config.COVERED(789, 789) ? false : Config.__M_NO == 789 ? true : false; |==> <NO-OP>
+791:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects2D)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):427:(KeyedObjects2D)obj |==> null
+792:COR:getRowKeys().equals(that.getRowKeys()):TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):428:getRowKeys().equals(that.getRowKeys()) |==> false
+793:COR:getRowKeys().equals(that.getRowKeys()):FALSE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):428:getRowKeys().equals(that.getRowKeys()) |==> true
+794:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):429:false |==> true
+795:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):429:return Config.__M_NO == 0 && Config.COVERED(794, 794) ? false : Config.__M_NO == 794 ? true : false; |==> <NO-OP>
+796:COR:getColumnKeys().equals(that.getColumnKeys()):TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):431:getColumnKeys().equals(that.getColumnKeys()) |==> false
+797:COR:getColumnKeys().equals(that.getColumnKeys()):FALSE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):431:getColumnKeys().equals(that.getColumnKeys()) |==> true
+798:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):432:false |==> true
+799:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):432:return Config.__M_NO == 0 && Config.COVERED(798, 798) ? false : Config.__M_NO == 798 ? true : false; |==> <NO-OP>
+800:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):434:getRowCount() |==> 0
+801:ROR:!=(int,int):<(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):435:rowCount != that.getRowCount() |==> rowCount < that.getRowCount()
+802:ROR:!=(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):435:rowCount != that.getRowCount() |==> rowCount <= that.getRowCount()
+803:ROR:!=(int,int):==(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):435:rowCount != that.getRowCount() |==> rowCount == that.getRowCount()
+804:ROR:!=(int,int):>(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):435:rowCount != that.getRowCount() |==> rowCount > that.getRowCount()
+805:ROR:!=(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):435:rowCount != that.getRowCount() |==> rowCount >= that.getRowCount()
+806:ROR:!=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):435:rowCount != that.getRowCount() |==> false
+807:ROR:!=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):435:rowCount != that.getRowCount() |==> true
+808:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):436:false |==> true
+809:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):436:return Config.__M_NO == 0 && Config.COVERED(808, 808) ? false : Config.__M_NO == 808 ? true : false; |==> <NO-OP>
+810:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):438:getColumnCount() |==> 0
+811:ROR:!=(int,int):<(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):439:colCount != that.getColumnCount() |==> colCount < that.getColumnCount()
+812:ROR:!=(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):439:colCount != that.getColumnCount() |==> colCount <= that.getColumnCount()
+813:ROR:!=(int,int):==(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):439:colCount != that.getColumnCount() |==> colCount == that.getColumnCount()
+814:ROR:!=(int,int):>(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):439:colCount != that.getColumnCount() |==> colCount > that.getColumnCount()
+815:ROR:!=(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):439:colCount != that.getColumnCount() |==> colCount >= that.getColumnCount()
+816:ROR:!=(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):439:colCount != that.getColumnCount() |==> false
+817:ROR:!=(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):439:colCount != that.getColumnCount() |==> true
+818:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):440:false |==> true
+819:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):440:return Config.__M_NO == 0 && Config.COVERED(818, 818) ? false : Config.__M_NO == 818 ? true : false; |==> <NO-OP>
+820:LVR:0:POS:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:0 |==> 1
+821:LVR:0:NEG:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:0 |==> -1
+822:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:r < rowCount |==> r != rowCount
+823:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:r < rowCount |==> r <= rowCount
+824:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:r < rowCount |==> r == rowCount
+825:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:r < rowCount |==> r > rowCount
+826:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:r < rowCount |==> r >= rowCount
+827:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:r < rowCount |==> false
+828:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):442:r < rowCount |==> true
+829:LVR:0:POS:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:0 |==> 1
+830:LVR:0:NEG:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:0 |==> -1
+831:ROR:<(int,int):!=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:c < colCount |==> c != colCount
+832:ROR:<(int,int):<=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:c < colCount |==> c <= colCount
+833:ROR:<(int,int):==(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:c < colCount |==> c == colCount
+834:ROR:<(int,int):>(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:c < colCount |==> c > colCount
+835:ROR:<(int,int):>=(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:c < colCount |==> c >= colCount
+836:ROR:<(int,int):FALSE(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:c < colCount |==> false
+837:ROR:<(int,int):TRUE(int,int):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):443:c < colCount |==> true
+838:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):444:getObject(r, c) |==> null
+839:EVR:<METHOD_INVOCATION(java.lang.Object)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):445:that.getObject(r, c) |==> null
+840:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):446:v1 == null |==> v1 != null
+841:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):446:v1 == null |==> false
+842:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):446:v1 == null |==> true
+843:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):447:v2 != null |==> v2 == null
+844:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):447:v2 != null |==> false
+845:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.KeyedObjects2D@equals(java.lang.Object):447:v2 != null |==> true
+846:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):448:false |==> true
+847:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):448:return Config.__M_NO == 0 && Config.COVERED(846, 846) ? false : Config.__M_NO == 846 ? true : false; |==> <NO-OP>
+848:COR:v1.equals(v2):TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):452:v1.equals(v2) |==> false
+849:COR:v1.equals(v2):FALSE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):452:v1.equals(v2) |==> true
+850:LVR:FALSE:TRUE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):453:false |==> true
+851:STD:<RETURN>:<NO-OP>:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):453:return Config.__M_NO == 0 && Config.COVERED(850, 850) ? false : Config.__M_NO == 850 ? true : false; |==> <NO-OP>
+852:LVR:TRUE:FALSE:org.jfree.data.KeyedObjects2D@equals(java.lang.Object):458:true |==> false
+853:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@hashCode():468:this.rowKeys.hashCode() |==> 0
+854:LVR:POS:0:org.jfree.data.KeyedObjects2D@hashCode():469:29 |==> 0
+855:LVR:POS:NEG:org.jfree.data.KeyedObjects2D@hashCode():469:29 |==> -29
+856:AOR:*(int,int):%(int,int):org.jfree.data.KeyedObjects2D@hashCode():469:29 * result |==> 29 % result
+857:AOR:*(int,int):+(int,int):org.jfree.data.KeyedObjects2D@hashCode():469:29 * result |==> 29 + result
+858:AOR:*(int,int):-(int,int):org.jfree.data.KeyedObjects2D@hashCode():469:29 * result |==> 29 - result
+859:AOR:*(int,int):/(int,int):org.jfree.data.KeyedObjects2D@hashCode():469:29 * result |==> 29 / result
+860:AOR:+(int,int):%(int,int):org.jfree.data.KeyedObjects2D@hashCode():469:29 * result + this.columnKeys.hashCode() |==> 29 * result % this.columnKeys.hashCode()
+861:AOR:+(int,int):*(int,int):org.jfree.data.KeyedObjects2D@hashCode():469:29 * result + this.columnKeys.hashCode() |==> 29 * result * this.columnKeys.hashCode()
+862:AOR:+(int,int):-(int,int):org.jfree.data.KeyedObjects2D@hashCode():469:29 * result + this.columnKeys.hashCode() |==> 29 * result - this.columnKeys.hashCode()
+863:AOR:+(int,int):/(int,int):org.jfree.data.KeyedObjects2D@hashCode():469:29 * result + this.columnKeys.hashCode() |==> 29 * result / this.columnKeys.hashCode()
+864:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@hashCode():469:result = 29 * result + this.columnKeys.hashCode() |==> <NO-OP>
+865:LVR:POS:0:org.jfree.data.KeyedObjects2D@hashCode():470:29 |==> 0
+866:LVR:POS:NEG:org.jfree.data.KeyedObjects2D@hashCode():470:29 |==> -29
+867:AOR:*(int,int):%(int,int):org.jfree.data.KeyedObjects2D@hashCode():470:29 * result |==> 29 % result
+868:AOR:*(int,int):+(int,int):org.jfree.data.KeyedObjects2D@hashCode():470:29 * result |==> 29 + result
+869:AOR:*(int,int):-(int,int):org.jfree.data.KeyedObjects2D@hashCode():470:29 * result |==> 29 - result
+870:AOR:*(int,int):/(int,int):org.jfree.data.KeyedObjects2D@hashCode():470:29 * result |==> 29 / result
+871:AOR:+(int,int):%(int,int):org.jfree.data.KeyedObjects2D@hashCode():470:29 * result + this.rows.hashCode() |==> 29 * result % this.rows.hashCode()
+872:AOR:+(int,int):*(int,int):org.jfree.data.KeyedObjects2D@hashCode():470:29 * result + this.rows.hashCode() |==> 29 * result * this.rows.hashCode()
+873:AOR:+(int,int):-(int,int):org.jfree.data.KeyedObjects2D@hashCode():470:29 * result + this.rows.hashCode() |==> 29 * result - this.rows.hashCode()
+874:AOR:+(int,int):/(int,int):org.jfree.data.KeyedObjects2D@hashCode():470:29 * result + this.rows.hashCode() |==> 29 * result / this.rows.hashCode()
+875:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@hashCode():470:result = 29 * result + this.rows.hashCode() |==> <NO-OP>
+876:EVR:<IDENTIFIER(int)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@hashCode():471:result |==> 0
+877:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects2D)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@clone():483:(KeyedObjects2D)super.clone() |==> null
+878:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@clone():484:clone.columnKeys = new java.util.ArrayList(this.columnKeys) |==> <NO-OP>
+879:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@clone():485:clone.rowKeys = new java.util.ArrayList(this.rowKeys) |==> <NO-OP>
+880:STD:<ASSIGN>:<NO-OP>:org.jfree.data.KeyedObjects2D@clone():486:clone.rows = new java.util.ArrayList(this.rows.size()) |==> <NO-OP>
+881:EVR:<METHOD_INVOCATION(java.util.Iterator)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@clone():487:this.rows.iterator() |==> null
+882:EVR:<TYPE_CAST(org.jfree.data.KeyedObjects)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@clone():489:(KeyedObjects)iterator.next() |==> null
+883:STD:<CALL>:<NO-OP>:org.jfree.data.KeyedObjects2D@clone():490:clone.rows.add(row.clone()) |==> <NO-OP>
+884:EVR:<IDENTIFIER(org.jfree.data.KeyedObjects2D)>:<DEFAULT>:org.jfree.data.KeyedObjects2D@clone():492:clone |==> null
+885:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):115:this.mean = mean |==> <NO-OP>
+886:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):116:this.median = median |==> <NO-OP>
+887:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):117:this.q1 = q1 |==> <NO-OP>
+888:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):118:this.q3 = q3 |==> <NO-OP>
+889:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):119:this.minRegularValue = minRegularValue |==> <NO-OP>
+890:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):120:this.maxRegularValue = maxRegularValue |==> <NO-OP>
+891:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):121:this.minOutlier = minOutlier |==> <NO-OP>
+892:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):122:this.maxOutlier = maxOutlier |==> <NO-OP>
+893:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@<init>(java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.lang.Number,java.util.List):123:this.outliers = outliers |==> <NO-OP>
+894:EVR:<MEMBER_SELECT(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getMean():160:this.mean |==> null
+895:EVR:<MEMBER_SELECT(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getMedian():169:this.median |==> null
+896:EVR:<MEMBER_SELECT(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getQ1():178:this.q1 |==> null
+897:EVR:<MEMBER_SELECT(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getQ3():187:this.q3 |==> null
+898:EVR:<MEMBER_SELECT(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getMinRegularValue():196:this.minRegularValue |==> null
+899:EVR:<MEMBER_SELECT(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getMaxRegularValue():205:this.maxRegularValue |==> null
+900:EVR:<MEMBER_SELECT(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getMinOutlier():214:this.minOutlier |==> null
+901:EVR:<MEMBER_SELECT(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getMaxOutlier():223:this.maxOutlier |==> null
+902:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.statistics.BoxAndWhiskerItem@getOutliers():232:this.outliers == null |==> this.outliers != null
+903:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.BoxAndWhiskerItem@getOutliers():232:this.outliers == null |==> false
+904:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.BoxAndWhiskerItem@getOutliers():232:this.outliers == null |==> true
+905:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@getOutliers():233:return null; |==> <NO-OP>
+906:EVR:<METHOD_INVOCATION(java.util.List)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@getOutliers():235:Collections.unmodifiableList(this.outliers) |==> null
+907:LVR:<CLASS>:<EMPTY>:org.jfree.data.statistics.BoxAndWhiskerItem@toString():245:"[mean=" |==> ""
+908:LVR:<CLASS>:<EMPTY>:org.jfree.data.statistics.BoxAndWhiskerItem@toString():245:",median=" |==> ""
+909:LVR:<CLASS>:<EMPTY>:org.jfree.data.statistics.BoxAndWhiskerItem@toString():246:",q1=" |==> ""
+910:LVR:<CLASS>:<EMPTY>:org.jfree.data.statistics.BoxAndWhiskerItem@toString():246:",q3=" |==> ""
+911:LVR:<CLASS>:<EMPTY>:org.jfree.data.statistics.BoxAndWhiskerItem@toString():246:"]" |==> ""
+912:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):258:obj == this |==> obj != this
+913:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):258:obj == this |==> false
+914:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):258:obj == this |==> true
+915:LVR:TRUE:FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):259:true |==> false
+916:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):259:return Config.__M_NO == 0 && Config.COVERED(915, 915) ? true : Config.__M_NO == 915 ? false : true; |==> <NO-OP>
+917:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):262:false |==> true
+918:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):262:return Config.__M_NO == 0 && Config.COVERED(917, 917) ? false : Config.__M_NO == 917 ? true : false; |==> <NO-OP>
+919:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):264:(BoxAndWhiskerItem)obj |==> null
+920:COR:ObjectUtilities.equal(this.mean, that.mean):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):265:ObjectUtilities.equal(this.mean, that.mean) |==> false
+921:COR:ObjectUtilities.equal(this.mean, that.mean):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):265:ObjectUtilities.equal(this.mean, that.mean) |==> true
+922:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):266:false |==> true
+923:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):266:return Config.__M_NO == 0 && Config.COVERED(922, 922) ? false : Config.__M_NO == 922 ? true : false; |==> <NO-OP>
+924:COR:ObjectUtilities.equal(this.median, that.median):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):268:ObjectUtilities.equal(this.median, that.median) |==> false
+925:COR:ObjectUtilities.equal(this.median, that.median):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):268:ObjectUtilities.equal(this.median, that.median) |==> true
+926:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):269:false |==> true
+927:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):269:return Config.__M_NO == 0 && Config.COVERED(926, 926) ? false : Config.__M_NO == 926 ? true : false; |==> <NO-OP>
+928:COR:ObjectUtilities.equal(this.q1, that.q1):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):271:ObjectUtilities.equal(this.q1, that.q1) |==> false
+929:COR:ObjectUtilities.equal(this.q1, that.q1):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):271:ObjectUtilities.equal(this.q1, that.q1) |==> true
+930:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):272:false |==> true
+931:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):272:return Config.__M_NO == 0 && Config.COVERED(930, 930) ? false : Config.__M_NO == 930 ? true : false; |==> <NO-OP>
+932:COR:ObjectUtilities.equal(this.q3, that.q3):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):274:ObjectUtilities.equal(this.q3, that.q3) |==> false
+933:COR:ObjectUtilities.equal(this.q3, that.q3):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):274:ObjectUtilities.equal(this.q3, that.q3) |==> true
+934:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):275:false |==> true
+935:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):275:return Config.__M_NO == 0 && Config.COVERED(934, 934) ? false : Config.__M_NO == 934 ? true : false; |==> <NO-OP>
+936:COR:ObjectUtilities.equal(this.minRegularValue, that.minRegularValue):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):277:ObjectUtilities.equal(this.minRegularValue, that.minRegularValue) |==> false
+937:COR:ObjectUtilities.equal(this.minRegularValue, that.minRegularValue):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):277:ObjectUtilities.equal(this.minRegularValue, that.minRegularValue) |==> true
+938:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):279:false |==> true
+939:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):279:return Config.__M_NO == 0 && Config.COVERED(938, 938) ? false : Config.__M_NO == 938 ? true : false; |==> <NO-OP>
+940:COR:ObjectUtilities.equal(this.maxRegularValue, that.maxRegularValue):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):281:ObjectUtilities.equal(this.maxRegularValue, that.maxRegularValue) |==> false
+941:COR:ObjectUtilities.equal(this.maxRegularValue, that.maxRegularValue):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):281:ObjectUtilities.equal(this.maxRegularValue, that.maxRegularValue) |==> true
+942:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):283:false |==> true
+943:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):283:return Config.__M_NO == 0 && Config.COVERED(942, 942) ? false : Config.__M_NO == 942 ? true : false; |==> <NO-OP>
+944:COR:ObjectUtilities.equal(this.minOutlier, that.minOutlier):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):285:ObjectUtilities.equal(this.minOutlier, that.minOutlier) |==> false
+945:COR:ObjectUtilities.equal(this.minOutlier, that.minOutlier):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):285:ObjectUtilities.equal(this.minOutlier, that.minOutlier) |==> true
+946:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):286:false |==> true
+947:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):286:return Config.__M_NO == 0 && Config.COVERED(946, 946) ? false : Config.__M_NO == 946 ? true : false; |==> <NO-OP>
+948:COR:ObjectUtilities.equal(this.maxOutlier, that.maxOutlier):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):288:ObjectUtilities.equal(this.maxOutlier, that.maxOutlier) |==> false
+949:COR:ObjectUtilities.equal(this.maxOutlier, that.maxOutlier):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):288:ObjectUtilities.equal(this.maxOutlier, that.maxOutlier) |==> true
+950:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):289:false |==> true
+951:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):289:return Config.__M_NO == 0 && Config.COVERED(950, 950) ? false : Config.__M_NO == 950 ? true : false; |==> <NO-OP>
+952:COR:ObjectUtilities.equal(this.outliers, that.outliers):TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):291:ObjectUtilities.equal(this.outliers, that.outliers) |==> false
+953:COR:ObjectUtilities.equal(this.outliers, that.outliers):FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):291:ObjectUtilities.equal(this.outliers, that.outliers) |==> true
+954:LVR:FALSE:TRUE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):292:false |==> true
+955:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):292:return Config.__M_NO == 0 && Config.COVERED(954, 954) ? false : Config.__M_NO == 954 ? true : false; |==> <NO-OP>
+956:LVR:TRUE:FALSE:org.jfree.data.statistics.BoxAndWhiskerItem@equals(java.lang.Object):294:true |==> false
+957:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():107:this.data = new KeyedObjects2D() |==> <NO-OP>
+958:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():108:this.minimumRangeValue = Double.NaN |==> <NO-OP>
+959:LVR:NEG:0:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():109:-1 |==> 0
+960:LVR:NEG:POS:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():109:-1 |==> 1
+961:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():109:this.minimumRangeValueRow = -1 |==> <NO-OP>
+962:LVR:NEG:0:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():110:-1 |==> 0
+963:LVR:NEG:POS:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():110:-1 |==> 1
+964:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():110:this.minimumRangeValueColumn = -1 |==> <NO-OP>
+965:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():111:this.maximumRangeValue = Double.NaN |==> <NO-OP>
+966:LVR:NEG:0:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():112:-1 |==> 0
+967:LVR:NEG:POS:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():112:-1 |==> 1
+968:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():112:this.maximumRangeValueRow = -1 |==> <NO-OP>
+969:LVR:NEG:0:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():113:-1 |==> 0
+970:LVR:NEG:POS:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():113:-1 |==> 1
+971:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():113:this.maximumRangeValueColumn = -1 |==> <NO-OP>
+972:LVR:0:POS:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():114:0.0 |==> 1.0
+973:LVR:0:NEG:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():114:0.0 |==> -1.0
+974:LVR:0:POS:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():114:0.0 |==> 1.0
+975:LVR:0:NEG:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():114:0.0 |==> -1.0
+976:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@<init>():114:this.rangeBounds = new Range(0.0, 0.0) |==> <NO-OP>
+977:EVR:<METHOD_INVOCATION(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(java.util.List,java.lang.Comparable,java.lang.Comparable):130:BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(list) |==> null
+978:STD:<CALL>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(java.util.List,java.lang.Comparable,java.lang.Comparable):131:add(item, rowKey, columnKey) |==> <NO-OP>
+979:STD:<CALL>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):147:this.data.addObject(item, rowKey, columnKey) |==> <NO-OP>
+980:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):150:this.data.getRowIndex(rowKey) |==> 0
+981:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):151:this.data.getColumnIndex(columnKey) |==> 0
+982:ROR:==(int,int):!=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r |==> this.maximumRangeValueRow != r
+983:ROR:==(int,int):<(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r |==> this.maximumRangeValueRow < r
+984:ROR:==(int,int):<=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r |==> this.maximumRangeValueRow <= r
+985:ROR:==(int,int):>(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r |==> this.maximumRangeValueRow > r
+986:ROR:==(int,int):>=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r |==> this.maximumRangeValueRow >= r
+987:ROR:==(int,int):FALSE(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r |==> false
+988:ROR:==(int,int):TRUE(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r |==> true
+989:ROR:==(int,int):!=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueColumn == c |==> this.maximumRangeValueColumn != c
+990:ROR:==(int,int):<(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueColumn == c |==> this.maximumRangeValueColumn < c
+991:ROR:==(int,int):<=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueColumn == c |==> this.maximumRangeValueColumn <= c
+992:ROR:==(int,int):>(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueColumn == c |==> this.maximumRangeValueColumn > c
+993:ROR:==(int,int):>=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueColumn == c |==> this.maximumRangeValueColumn >= c
+994:ROR:==(int,int):FALSE(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.maximumRangeValueColumn == c |==> false
+995:ROR:==(int,int):TRUE(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.maximumRangeValueColumn == c |==> true
+996:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c |==> this.maximumRangeValueRow == r != (this.maximumRangeValueColumn == c)
+997:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c |==> this.maximumRangeValueRow == r == (this.maximumRangeValueColumn == c)
+998:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c |==> false
+999:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c |==> this.maximumRangeValueRow == r
+1000:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c |==> this.maximumRangeValueColumn == c
+1001:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c |==> true
+1002:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c |==> this.maximumRangeValueRow == r || this.maximumRangeValueColumn == c
+1003:ROR:==(int,int):!=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r |==> this.minimumRangeValueRow != r
+1004:ROR:==(int,int):<(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r |==> this.minimumRangeValueRow < r
+1005:ROR:==(int,int):<=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r |==> this.minimumRangeValueRow <= r
+1006:ROR:==(int,int):>(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r |==> this.minimumRangeValueRow > r
+1007:ROR:==(int,int):>=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r |==> this.minimumRangeValueRow >= r
+1008:ROR:==(int,int):FALSE(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r |==> false
+1009:ROR:==(int,int):TRUE(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r |==> true
+1010:ROR:==(int,int):!=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueColumn == c |==> this.minimumRangeValueColumn != c
+1011:ROR:==(int,int):<(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueColumn == c |==> this.minimumRangeValueColumn < c
+1012:ROR:==(int,int):<=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueColumn == c |==> this.minimumRangeValueColumn <= c
+1013:ROR:==(int,int):>(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueColumn == c |==> this.minimumRangeValueColumn > c
+1014:ROR:==(int,int):>=(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueColumn == c |==> this.minimumRangeValueColumn >= c
+1015:ROR:==(int,int):FALSE(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueColumn == c |==> false
+1016:ROR:==(int,int):TRUE(int,int):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueColumn == c |==> true
+1017:COR:&&(boolean,boolean):!=(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c |==> this.minimumRangeValueRow == r != (this.minimumRangeValueColumn == c)
+1018:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c |==> this.minimumRangeValueRow == r == (this.minimumRangeValueColumn == c)
+1019:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c |==> false
+1020:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c |==> this.minimumRangeValueRow == r
+1021:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c |==> this.minimumRangeValueColumn == c
+1022:COR:&&(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):154:this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c |==> true
+1023:COR:&&(boolean,boolean):||(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c |==> this.minimumRangeValueRow == r || this.minimumRangeValueColumn == c
+1024:COR:||(boolean,boolean):!=(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:(this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) || (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c) |==> (this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) != (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c)
+1025:COR:||(boolean,boolean):&&(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:(this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) || (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c) |==> (this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) && (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c)
+1026:COR:||(boolean,boolean):==(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:(this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) || (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c) |==> (this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) == (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c)
+1027:COR:||(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:(this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) || (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c) |==> false
+1028:COR:||(boolean,boolean):LHS(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):152:(this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) || (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c) |==> (this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c)
+1029:COR:||(boolean,boolean):RHS(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:(this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) || (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c) |==> (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c)
+1030:COR:||(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):153:(this.maximumRangeValueRow == r && this.maximumRangeValueColumn == c) || (this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c) |==> true
+1031:STD:<CALL>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):155:updateBounds() |==> <NO-OP>
+1032:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):158:Double.NaN |==> 0.0
+1033:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):159:item.getMinOutlier() != null |==> item.getMinOutlier() == null
+1034:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):159:item.getMinOutlier() != null |==> false
+1035:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):159:item.getMinOutlier() != null |==> true
+1036:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):160:minval = item.getMinOutlier().doubleValue() |==> <NO-OP>
+1037:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):162:Double.NaN |==> 0.0
+1038:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):163:item.getMaxOutlier() != null |==> item.getMaxOutlier() == null
+1039:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):163:item.getMaxOutlier() != null |==> false
+1040:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):163:item.getMaxOutlier() != null |==> true
+1041:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):164:maxval = item.getMaxOutlier().doubleValue() |==> <NO-OP>
+1042:COR:Double.isNaN(this.maximumRangeValue):TRUE:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):167:Double.isNaN(this.maximumRangeValue) |==> false
+1043:COR:Double.isNaN(this.maximumRangeValue):FALSE:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):167:Double.isNaN(this.maximumRangeValue) |==> true
+1044:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):168:this.maximumRangeValue = maxval |==> <NO-OP>
+1045:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):169:this.maximumRangeValueRow = r |==> <NO-OP>
+1046:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):170:this.maximumRangeValueColumn = c |==> <NO-OP>
+1047:ROR:>(double,double):!=(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):172:maxval > this.maximumRangeValue |==> maxval != this.maximumRangeValue
+1048:ROR:>(double,double):<(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):172:maxval > this.maximumRangeValue |==> maxval < this.maximumRangeValue
+1049:ROR:>(double,double):<=(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):172:maxval > this.maximumRangeValue |==> maxval <= this.maximumRangeValue
+1050:ROR:>(double,double):==(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):172:maxval > this.maximumRangeValue |==> maxval == this.maximumRangeValue
+1051:ROR:>(double,double):>=(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):172:maxval > this.maximumRangeValue |==> maxval >= this.maximumRangeValue
+1052:ROR:>(double,double):FALSE(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):172:maxval > this.maximumRangeValue |==> false
+1053:ROR:>(double,double):TRUE(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):172:maxval > this.maximumRangeValue |==> true
+1054:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):173:this.maximumRangeValue = maxval |==> <NO-OP>
+1055:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):174:this.maximumRangeValueRow = r |==> <NO-OP>
+1056:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):175:this.maximumRangeValueColumn = c |==> <NO-OP>
+1057:COR:Double.isNaN(this.minimumRangeValue):TRUE:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):178:Double.isNaN(this.minimumRangeValue) |==> false
+1058:COR:Double.isNaN(this.minimumRangeValue):FALSE:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):178:Double.isNaN(this.minimumRangeValue) |==> true
+1059:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):179:this.minimumRangeValue = minval |==> <NO-OP>
+1060:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):180:this.minimumRangeValueRow = r |==> <NO-OP>
+1061:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):181:this.minimumRangeValueColumn = c |==> <NO-OP>
+1062:ROR:<(double,double):!=(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):183:minval < this.minimumRangeValue |==> minval != this.minimumRangeValue
+1063:ROR:<(double,double):<=(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):183:minval < this.minimumRangeValue |==> minval <= this.minimumRangeValue
+1064:ROR:<(double,double):==(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):183:minval < this.minimumRangeValue |==> minval == this.minimumRangeValue
+1065:ROR:<(double,double):>(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):183:minval < this.minimumRangeValue |==> minval > this.minimumRangeValue
+1066:ROR:<(double,double):>=(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):183:minval < this.minimumRangeValue |==> minval >= this.minimumRangeValue
+1067:ROR:<(double,double):FALSE(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):183:minval < this.minimumRangeValue |==> false
+1068:ROR:<(double,double):TRUE(double,double):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):183:minval < this.minimumRangeValue |==> true
+1069:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):184:this.minimumRangeValue = minval |==> <NO-OP>
+1070:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):185:this.minimumRangeValueRow = r |==> <NO-OP>
+1071:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):186:this.minimumRangeValueColumn = c |==> <NO-OP>
+1072:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):189:this.rangeBounds = new Range(this.minimumRangeValue, this.maximumRangeValue) |==> <NO-OP>
+1073:STD:<CALL>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@add(org.jfree.data.statistics.BoxAndWhiskerItem,java.lang.Comparable,java.lang.Comparable):191:fireDatasetChanged() |==> <NO-OP>
+1074:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getItem(int,int):204:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1075:EVR:<METHOD_INVOCATION(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getValue(int,int):219:getMedianValue(row, column) |==> null
+1076:EVR:<METHOD_INVOCATION(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getValue(java.lang.Comparable,java.lang.Comparable):234:getMedianValue(rowKey, columnKey) |==> null
+1077:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(int,int):250:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1078:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(int,int):252:item != null |==> item == null
+1079:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(int,int):252:item != null |==> false
+1080:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(int,int):252:item != null |==> true
+1081:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(int,int):253:result = item.getMean() |==> <NO-OP>
+1082:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(int,int):255:result |==> null
+1083:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(java.lang.Comparable,java.lang.Comparable):271:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1084:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(java.lang.Comparable,java.lang.Comparable):273:item != null |==> item == null
+1085:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(java.lang.Comparable,java.lang.Comparable):273:item != null |==> false
+1086:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(java.lang.Comparable,java.lang.Comparable):273:item != null |==> true
+1087:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(java.lang.Comparable,java.lang.Comparable):274:result = item.getMean() |==> <NO-OP>
+1088:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMeanValue(java.lang.Comparable,java.lang.Comparable):276:result |==> null
+1089:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(int,int):291:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1090:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(int,int):293:item != null |==> item == null
+1091:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(int,int):293:item != null |==> false
+1092:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(int,int):293:item != null |==> true
+1093:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(int,int):294:result = item.getMedian() |==> <NO-OP>
+1094:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(int,int):296:result |==> null
+1095:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(java.lang.Comparable,java.lang.Comparable):311:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1096:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(java.lang.Comparable,java.lang.Comparable):313:item != null |==> item == null
+1097:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(java.lang.Comparable,java.lang.Comparable):313:item != null |==> false
+1098:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(java.lang.Comparable,java.lang.Comparable):313:item != null |==> true
+1099:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(java.lang.Comparable,java.lang.Comparable):314:result = item.getMedian() |==> <NO-OP>
+1100:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMedianValue(java.lang.Comparable,java.lang.Comparable):316:result |==> null
+1101:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(int,int):331:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1102:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(int,int):333:item != null |==> item == null
+1103:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(int,int):333:item != null |==> false
+1104:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(int,int):333:item != null |==> true
+1105:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(int,int):334:result = item.getQ1() |==> <NO-OP>
+1106:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(int,int):336:result |==> null
+1107:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(java.lang.Comparable,java.lang.Comparable):351:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1108:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(java.lang.Comparable,java.lang.Comparable):353:item != null |==> item == null
+1109:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(java.lang.Comparable,java.lang.Comparable):353:item != null |==> false
+1110:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(java.lang.Comparable,java.lang.Comparable):353:item != null |==> true
+1111:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(java.lang.Comparable,java.lang.Comparable):354:result = item.getQ1() |==> <NO-OP>
+1112:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ1Value(java.lang.Comparable,java.lang.Comparable):356:result |==> null
+1113:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(int,int):371:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1114:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(int,int):373:item != null |==> item == null
+1115:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(int,int):373:item != null |==> false
+1116:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(int,int):373:item != null |==> true
+1117:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(int,int):374:result = item.getQ3() |==> <NO-OP>
+1118:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(int,int):376:result |==> null
+1119:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(java.lang.Comparable,java.lang.Comparable):391:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1120:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(java.lang.Comparable,java.lang.Comparable):393:item != null |==> item == null
+1121:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(java.lang.Comparable,java.lang.Comparable):393:item != null |==> false
+1122:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(java.lang.Comparable,java.lang.Comparable):393:item != null |==> true
+1123:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(java.lang.Comparable,java.lang.Comparable):394:result = item.getQ3() |==> <NO-OP>
+1124:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getQ3Value(java.lang.Comparable,java.lang.Comparable):396:result |==> null
+1125:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getColumnIndex(java.lang.Comparable):409:this.data.getColumnIndex(key) |==> 0
+1126:EVR:<METHOD_INVOCATION(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getColumnKey(int):422:this.data.getColumnKey(column) |==> null
+1127:EVR:<METHOD_INVOCATION(java.util.List)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getColumnKeys():433:this.data.getColumnKeys() |==> null
+1128:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getRowIndex(java.lang.Comparable):446:this.data.getRowIndex(key) |==> 0
+1129:EVR:<METHOD_INVOCATION(java.lang.Comparable)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getRowKey(int):459:this.data.getRowKey(row) |==> null
+1130:EVR:<METHOD_INVOCATION(java.util.List)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getRowKeys():470:this.data.getRowKeys() |==> null
+1131:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getRowCount():481:this.data.getRowCount() |==> 0
+1132:EVR:<METHOD_INVOCATION(int)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getColumnCount():492:this.data.getColumnCount() |==> 0
+1133:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getRangeLowerBound(boolean):506:this.minimumRangeValue |==> 0.0
+1134:EVR:<MEMBER_SELECT(double)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getRangeUpperBound(boolean):520:this.maximumRangeValue |==> 0.0
+1135:EVR:<MEMBER_SELECT(org.jfree.data.Range)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getRangeBounds(boolean):532:this.rangeBounds |==> null
+1136:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(int,int):547:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1137:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(int,int):549:item != null |==> item == null
+1138:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(int,int):549:item != null |==> false
+1139:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(int,int):549:item != null |==> true
+1140:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(int,int):550:result = item.getMinRegularValue() |==> <NO-OP>
+1141:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(int,int):552:result |==> null
+1142:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(java.lang.Comparable,java.lang.Comparable):567:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1143:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(java.lang.Comparable,java.lang.Comparable):569:item != null |==> item == null
+1144:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(java.lang.Comparable,java.lang.Comparable):569:item != null |==> false
+1145:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(java.lang.Comparable,java.lang.Comparable):569:item != null |==> true
+1146:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(java.lang.Comparable,java.lang.Comparable):570:result = item.getMinRegularValue() |==> <NO-OP>
+1147:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinRegularValue(java.lang.Comparable,java.lang.Comparable):572:result |==> null
+1148:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(int,int):587:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1149:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(int,int):589:item != null |==> item == null
+1150:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(int,int):589:item != null |==> false
+1151:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(int,int):589:item != null |==> true
+1152:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(int,int):590:result = item.getMaxRegularValue() |==> <NO-OP>
+1153:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(int,int):592:result |==> null
+1154:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(java.lang.Comparable,java.lang.Comparable):607:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1155:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(java.lang.Comparable,java.lang.Comparable):609:item != null |==> item == null
+1156:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(java.lang.Comparable,java.lang.Comparable):609:item != null |==> false
+1157:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(java.lang.Comparable,java.lang.Comparable):609:item != null |==> true
+1158:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(java.lang.Comparable,java.lang.Comparable):610:result = item.getMaxRegularValue() |==> <NO-OP>
+1159:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxRegularValue(java.lang.Comparable,java.lang.Comparable):612:result |==> null
+1160:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(int,int):627:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1161:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(int,int):629:item != null |==> item == null
+1162:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(int,int):629:item != null |==> false
+1163:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(int,int):629:item != null |==> true
+1164:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(int,int):630:result = item.getMinOutlier() |==> <NO-OP>
+1165:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(int,int):632:result |==> null
+1166:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(java.lang.Comparable,java.lang.Comparable):647:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1167:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(java.lang.Comparable,java.lang.Comparable):649:item != null |==> item == null
+1168:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(java.lang.Comparable,java.lang.Comparable):649:item != null |==> false
+1169:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(java.lang.Comparable,java.lang.Comparable):649:item != null |==> true
+1170:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(java.lang.Comparable,java.lang.Comparable):650:result = item.getMinOutlier() |==> <NO-OP>
+1171:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMinOutlier(java.lang.Comparable,java.lang.Comparable):652:result |==> null
+1172:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(int,int):667:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1173:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(int,int):669:item != null |==> item == null
+1174:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(int,int):669:item != null |==> false
+1175:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(int,int):669:item != null |==> true
+1176:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(int,int):670:result = item.getMaxOutlier() |==> <NO-OP>
+1177:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(int,int):672:result |==> null
+1178:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(java.lang.Comparable,java.lang.Comparable):687:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1179:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(java.lang.Comparable,java.lang.Comparable):689:item != null |==> item == null
+1180:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(java.lang.Comparable,java.lang.Comparable):689:item != null |==> false
+1181:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(java.lang.Comparable,java.lang.Comparable):689:item != null |==> true
+1182:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(java.lang.Comparable,java.lang.Comparable):690:result = item.getMaxOutlier() |==> <NO-OP>
+1183:EVR:<IDENTIFIER(java.lang.Number)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getMaxOutlier(java.lang.Comparable,java.lang.Comparable):692:result |==> null
+1184:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(int,int):707:(BoxAndWhiskerItem)this.data.getObject(row, column) |==> null
+1185:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(int,int):709:item != null |==> item == null
+1186:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(int,int):709:item != null |==> false
+1187:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(int,int):709:item != null |==> true
+1188:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(int,int):710:result = item.getOutliers() |==> <NO-OP>
+1189:EVR:<IDENTIFIER(java.util.List)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(int,int):712:result |==> null
+1190:EVR:<TYPE_CAST(org.jfree.data.statistics.BoxAndWhiskerItem)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(java.lang.Comparable,java.lang.Comparable):727:(BoxAndWhiskerItem)this.data.getObject(rowKey, columnKey) |==> null
+1191:ROR:!=(java.lang.Object,java.lang.Object):==(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(java.lang.Comparable,java.lang.Comparable):729:item != null |==> item == null
+1192:ROR:!=(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(java.lang.Comparable,java.lang.Comparable):729:item != null |==> false
+1193:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(java.lang.Comparable,java.lang.Comparable):729:item != null |==> true
+1194:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(java.lang.Comparable,java.lang.Comparable):730:result = item.getOutliers() |==> <NO-OP>
+1195:EVR:<IDENTIFIER(java.util.List)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@getOutliers(java.lang.Comparable,java.lang.Comparable):732:result |==> null
+1196:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@updateBounds():740:this.minimumRangeValue = Double.NaN |==> <NO-OP>
+1197:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@updateBounds():741:this.maximumRangeValue = Double.NaN |==> <NO-OP>
+1198:ROR:==(java.lang.Object,java.lang.Object):!=(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@equals(java.lang.Object):752:obj == this |==> obj != this
+1199:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@equals(java.lang.Object):752:obj == this |==> false
+1200:ROR:==(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@equals(java.lang.Object):752:obj == this |==> true
+1201:LVR:TRUE:FALSE:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@equals(java.lang.Object):753:true |==> false
+1202:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@equals(java.lang.Object):753:return Config.__M_NO == 0 && Config.COVERED(1201, 1201) ? true : Config.__M_NO == 1201 ? false : true; |==> <NO-OP>
+1203:EVR:<TYPE_CAST(org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@equals(java.lang.Object):757:(DefaultBoxAndWhiskerCategoryDataset)obj |==> null
+1204:STD:<RETURN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@equals(java.lang.Object):758:return ObjectUtilities.equal(this.data, dataset.data); |==> <NO-OP>
+1205:LVR:FALSE:TRUE:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@equals(java.lang.Object):760:false |==> true
+1206:EVR:<TYPE_CAST(org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@clone():772:(DefaultBoxAndWhiskerCategoryDataset)super.clone() |==> null
+1207:STD:<ASSIGN>:<NO-OP>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@clone():773:clone.data = (KeyedObjects2D)this.data.clone() |==> <NO-OP>
+1208:EVR:<IDENTIFIER(org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset)>:<DEFAULT>:org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset@clone():774:clone |==> null

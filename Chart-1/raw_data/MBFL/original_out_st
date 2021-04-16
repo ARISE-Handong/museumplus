@@ -1,0 +1,1 @@
+org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests#test2947660,0,junit.framework.AssertionFailedError: expected:<1> but was:<0> at org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests.test2947660(AbstractCategoryItemRendererTests.java:406)
