@@ -1,0 +1,69 @@
+#!/usr/bin/python2.7
+
+import argparse
+import csv
+
+def classname_to_filename(classname):
+  classname = classname[:classname.find('.java')]
+  return classname.replace('/', '.')
+def stmt_to_line(stmt):
+  classname, lineno = stmt.rsplit('#', 1)
+  return '{}#{}'.format(classname_to_filename(classname), lineno)
+
+
+assert classname_to_filename('org/apache/MyClass.java') == 'org.apache.MyClass'
+assert stmt_to_line('org/apache/MyClass.java#123') == 'org.apache.MyClass#123'
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--failing-stmts', required=True)
+parser.add_argument('--source-code-lines', required=True)
+parser.add_argument('--output', required=True)
+
+args = parser.parse_args()
+
+source_code = dict()
+with open(args.source_code_lines) as f:
+  for line in f:
+    line = line.strip()
+    entry = line.split(':')
+    entry[0]= stmt_to_line(entry[0])
+    entry[1]=stmt_to_line(entry[1])
+    key = entry[0]
+    if key in source_code:
+      source_code[key].append(entry[1])
+    else:
+      source_code[key] = []
+      source_code[key].append(entry[1])
+f.close()
+
+failing_stmts = list()
+
+#
+# Collect and convert all statements into lines
+#
+with open(args.failing_stmts) as failing_file:
+  for line in failing_file:
+    line=line.strip()
+    if line not in failing_stmts:
+      failing_stmts.append(line)
+failing_file.close()
+
+#
+# Expand lines that have sub-lines
+#
+for stmt in failing_stmts:
+  if stmt in source_code:
+    for additional_line in source_code[stmt]:
+      if additional_line not in failing_stmts:
+        failing_stmts.append(additional_line)
+
+#
+# Write the dictionary to the output file
+#
+with open(args.output, 'w') as f:
+  for stmt in failing_stmts:
+    f.write(stmt+'\n')
+f.close()
+
+# EOF
+
